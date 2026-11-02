@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
     <url>
-        <loc>https://github.com/Zaneparks87/ST10470956-WEDE-SOE</loc>
+        <loc>https://zaneparks87.github.io/ST10470956_POE3_WEDE5020/index.html</loc>
+    </url>
+   
+    <url>
+        <loc>https://zaneparks87.github.io/ST10470956_POE3_WEDE5020/catalogue.html</loc>
     </url>
 
     <url>
-        <loc>https://github.com/Zaneparks87/ST10470956-WEDE-SOE/blob/main/catalogue.html</loc>
+        <loc>https://zaneparks87.github.io/ST10470956_POE3_WEDE5020/about_us.html</loc>
     </url>
 
+    <url>
+        <loc>https://zaneparks87.github.io/ST10470956_POE3_WEDE5020/order.html</loc>
+    </url>
+
+    <url>
+        <loc>https://zaneparks87.github.io/ST10470956_POE3_WEDE5020/contact.html</loc>
+    </url>
+    
+    <url>
+        <loc>https://zaneparks87.github.io/ST10470956_POE3_WEDE5020/enquiry.html</loc>
+    </url>
 </urlset>
