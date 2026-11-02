@@ -1,2 +1,3 @@
 User-agent: *
 Allow: / 
+Sitemap: https://zaneparks87.github.io/ST10470956_POE3_WEDE5020/sitemap.xml
