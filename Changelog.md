@@ -36,82 +36,105 @@ moved saved jpg images under assets, that where you will find all images.
 added a changelog file. at first i had everything inside the README.md file.
 Executed staging commands and verified Git commits to sync hardcoded Proposal 2 color scheme patches directly to the main production branch.
 
-october 2026
-sir had said my website is missing somethings  i fixed all my mistakes 
-All notable project updates should be recorded here. 
-— 2026-10-30
+
+All significant changes, improvements, and fixes made to the Zaneparks Hyper website are recorded below.
+ 30 October 2026
+
 Added
-- Enquiry page with required fields, topic selection, optional order reference, and question field.
-- FAQ accordion controls that open and close answers and switch the visible icon between + and −.
-- Client-side enquiry form validation and success/error feedback.
-- Documentation files for project setup and rubric tracking.
+- Created an enquiry page with required fields, enquiry-topic selection, an optional order reference, and a question field.
+- Added an FAQ accordion that allows users to expand and collapse answers, with the icons changing between + and −.
+- Implemented client-side enquiry form validation with success and error messages.
+- Added project documentation to explain the website structure, setup, and development progress.
+- Created a business email address: zaneparkehyper@gmail.com.
+
 Improved
-- Catalogue search and price sorting.
-- Order form validation and delivery-option handling.
-- Form labels, input hints, feedback areas, and responsive styling on updated pages.
-- Page metadata and internal navigation on updated HTML pages.
-Fixed
-- FAQ script now finds each answer panel within its corresponding .accordion-item, avoiding reliance on missing aria-controls attributes in older markup.
-- Corrected JavaScript path references where identified using the correct javascript.
-- Identified product image paths and catalogue links as areas to verify.
-- Forms provide front-end validation only unless an actual backend or form service is connected. They do not automatically send email or store submissions.
-- The order page is a demonstration and does not process real payments or create a real order.
-- AJAX form submission must be implemented and tested if required by the rubric.
-- Confirm that the map is present, loads correctly, and points to the real store location; Johannesburg was only an example location.
-changed mt FAQ to enquiry
-changed my contact_us to Contact
- created email address for the business(zaneparkehyper@gmail.com)
- i commited on git
- 31 -10 
- Reditored my whole code changed how it looks 
- fixed my css
- check the html andjava tyhey function
- REDERENCE LIST PICTURES 
- WOMEN DRESS- PINTREST FROM authsnez_
- WOMEN STRIGHT JEANS -PINTRESRT FROM Straight Leg Jeans Pattern For Women
-margaretperng
-womwn clohing2 -pintrest 
-men clothing -pintrest
-men stright jean pintrest
-men linen set -pintrest 
-everyday tops women - pintrest f
-quater jersy pintrest  Huston.Hallway
-hustonhallway
-kiDs tracksuits pintrest - ayah0194
-watches pintrest from day and night watches
-and the rest of the picture are from pintrest as well,just donr remember the owners 
-kids tops- pintrest
-women blue set frompintrest
-women tops from pintrest
-women dress from pintrest
-glassware from pintrest
-mugs from pintrests
-kids clothing pintrest 
- crocs from crocs
-  women watches from pintrest earrings pintrest
-  bags from pintrest
-  shortsleeve baby vests pintrest
-  men lilen pintrest
-  women sandles pintrest men sandles pintrest
-  sunnies pintrest
-  plates pintrest
-launched my website and the about had issues so im fixing it
-add a google maps loction being boksburg mall location:https://www.google.com/maps?q=Shop%20114%2C%20Bentel%20Ave%2C%20Jansen%20Park%2C%20Boksburg%2C%201462%2C%20South%20Africa&output=embed"
-changed the previous subscription tag line to Subscribe to our newsletter for store updates, new arrivals and special offers.
-Published my website and my about us had an error i had to fix 
-about to commit now
+- Enhanced catalogue search and product price sorting.
+- Improved order form validation and delivery-option handling.
+- Updated form labels, input hints, and feedback messages.
+- Improved responsive styling, page metadata, and navigation links.
+- Updated the JavaScript file paths to use the correct javascript/ where necessary.
+- Changed the FAQ section to form part of the Enquiry page.
+- Renamed the Contact page to use contact.html instead of contact_us.html`.
+- Updated the newsletter tagline to: “Subscribe to our newsletter for store updates, new arrivals and special offers.”
 
-Reference list
-2. Google (n.d.)  Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/robots/intro (Accessed: 1 November 2026).
+ Fixed and Reviewed
+- Updated the FAQ JavaScript so each accordion control identifies the correct answer panel within its corresponding accordion item.
+- Reviewed HTML, CSS, and JavaScript functionality.
+- Checked product image paths and catalogue links for potential errors.
+- Reviewed form behaviour and confirmed that client-side validation does not automatically send or store submissions without a connected backend or form service.
+- Confirmed that the order form is a demonstration and does not process payments or create real orders.
+- Identified AJAX form submission as a possible additional requirement, depending on the project rubric.
 
-3. Google (n.d.) . Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap (Accessed: 1 November 2026).
+31 October 2026
+Improved
+- Reviewed and redesigned the website's overall appearance.
+- Updated and corrected CSS styling.
+- Reviewed the HTML structure and JavaScript functionality.
+- Prepared a reference list for external resources and product images.
+- Added a Google Maps embed pointing to the intended store location at Shop 114, Bentel Avenue, Jansen Park, Boksburg, South Africa.
+- Published the website using GitHub Pages.
 
-4. Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 25 October 2026).
+Fixed and Reviewed
+- Identified an error affecting the About Us page after publication.
+- Investigated the About Us page issue and prepared a correction before committing the updated code.
+- Continued checking website navigation and page accessibility.
 
-5. Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 26 October 2026).
+Version Control
+- Committed website updates to GitHub during development.
+- Prepared additional changes for a subsequent commit after identifying the About Us page issue.
 
-6. Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 26 October 2026).
+Notes and Limitations
 
-7. World Wide Web Consortium (W3C) (n.d.) . Available at: https://www.w3.org/TR/WCAG22/ (Accessed: 1 November 2026).
-8. W3School .Available at: https://www.w3schools.com/js/default.asp(Accessed:31 October 2026)
-9. pintrest for pictures
+- Contact, enquiry, and newsletter forms require a backend or external service to transmit or store submissions.
+- The order form is for demonstration purposes only.
+- Product image sources should be acknowledged appropriately in the reference list.
+- The published website should be tested to ensure that all pages, links, images, stylesheets, and scripts work correctly.
+Product Image References
+
+Product images used on the Zaneparks Hyper website were sourced primarily from Pinterest. Where identifiable, the original creator or image source is acknowledged below.
+
+- Women's dresses — Pinterest.https://za.pinterest.com/pin/698198748525573987/
+- Women's straight-leg jeans — Pinterest; .https://za.pinterest.com/pin/1131318368931224558/
+- Men's clothing — Pinterest.https://za.pinterest.com/pin/4594938339730225216/
+- Men's straight-leg jeans — Pinterest.https://za.pinterest.com/pin/1140114461940270439/
+- Men's linen sets — Pinterest.https://za.pinterest.com/pin/783626403948679914/
+- Women's everyday tops — Pinterest.https://za.pinterest.com/pin/1076782592165101060/
+- Quarter-zip jerseys —.https://za.pinterest.com/pin/1095641415620406073/
+- Children's tracksuits — https://za.pinterest.com/pin/961166745490183712/.
+- men Watches — Pinterest.https://za.pinterest.com/pin/1122311169759605347/
+- Children's tops — Pinterest.https://za.pinterest.com/pin/32017847339301342/
+- Women's blue sets — Pinterest.https://za.pinterest.com/pin/1108448527064751410/
+- Glassware — Pinterest.https://za.pinterest.com/pin/513832638753464196/
+- Mugs — Pinterest.https://za.pinterest.com/pin/177821885281690816/
+- Children's clothing — Pinterest.https://za.pinterest.com/pin/559290847494427825/
+- Women's watches — Pinterest.https://za.pinterest.com/pin/883409283164777833/
+- Earrings — Pinterest.https://za.pinterest.com/pin/1150458667345975143/
+- Bags — Pinterest.https://za.pinterest.com/pin/1102256077576055145/
+- Short-sleeved baby vests — Pinterest.https://za.pinterest.com/pin/124482377194195620/
+- Women's sandals — Pinterest.https://za.pinterest.com/pin/389279961556030154/
+- Men's sandals — Pinterest.https://za.pinterest.com/pin/883409283164777833/
+- Sunglasses — Pinterest.https://za.pinterest.com/pin/883409283164777833/
+- Plates — Pinterest.https://za.pinterest.com/pin/1113163232951207198/
+- Crocs footwear — Crocs.https://za.pinterest.com/pin/4611615748065619968/
+kids watches https://za.pinterest.com/pin/1011269291335760258/
+reference list
+Google (n.d.) . Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/robots/intro (Accessed: 1 November 2026).
+
+Google (n.d.) . Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap (Accessed: 1 November 2026).
+
+Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 25 October 2026).
+
+Mozilla (n.d.) *. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 26 October 2026).
+
+Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 26 October 2026).
+
+W3Schools (n.d.) . Available at: https://www.w3schools.com/js/default.asp (Accessed: 31 October 2026).
+
+World Wide Web Consortium (W3C) (n.d.). Available at: https://www.w3.org/TR/WCAG22/ (Accessed: 1 November 2026).
+
+Pinterest (n.d.) . Available at: https://www.pinterest.com/ (Accessed: October–November 2026).
+
+Crocs (n.d.) . Available at: https://www.crocs.com/ (Accessed: October–November 2026).
+Added
+- Added links to Pinterest creator profiles for product images used on the website.
+- Included image-source references to improve documentation and acknowledge image creators.
