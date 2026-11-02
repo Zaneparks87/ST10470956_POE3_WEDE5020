@@ -73,6 +73,7 @@ Improved
 - Prepared a reference list for external resources and product images.
 - Added a Google Maps embed pointing to the intended store location at Shop 114, Bentel Avenue, Jansen Park, Boksburg, South Africa.
 - Published the website using GitHub Pages.
+- created a fully detalied README
 
 Fixed and Reviewed
 - Identified an error affecting the About Us page after publication.
