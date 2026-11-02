@@ -1,23 +1,21 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-    const mapContainer = document.getElementById("storeMap");
+    "use strict";
+const mapContainer = document.getElementById("storeMap");
 
-    if (!mapContainer) {
-        console.warn("Map container #storeMap was not found on this page.");
-        return;
-    }
-    const mapFrame = document.createElement("iframe");
+if (!mapContainer) {
+    console.warn("Map container #storeMap was not found on this page.");
+    return;
+}
+const boksburgLat = -26.1903;
+const boksburgLng = 28.2439;
+const mapZoomLevel = 16;
 
-    mapFrame.src =
-        "https://www.google.com/maps?q=Shop+114,+Bentel+Ave,+Jansen+Park,+Boksburg,+1462,+South+Africa&output=embed";
+const map = L.map("storeMap").setView([boksburgLat, boksburgLng], mapZoomLevel);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
 
-    mapFrame.title = "Find ZaneparksHyper in Boksburg, South Africa";
-    mapFrame.width = "100%";
-    mapFrame.height = "400";
-    mapFrame.style.border = "0";
-    mapFrame.style.borderRadius = "8px";
-    mapFrame.loading = "lazy";
-    mapFrame.referrerPolicy = "no-referrer-when-downgrade";
-    mapFrame.allowFullscreen = true;
-    mapContainer.replaceChildren(mapFrame);
+const storeMarker = L.marker([boksburgLat, boksburgLng]).addTo(map);
+storeMarker.bindPopup("<b>ZaneparksHyper</b><br>Shop 114, Bentel Ave, Boksburg.").openPopup();
 });
+

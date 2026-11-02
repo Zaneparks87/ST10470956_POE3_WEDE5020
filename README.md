@@ -92,5 +92,6 @@ Project Name: Zaneparks Hyper
 Project Type: Retail Website  
 Technologies: HTML5, CSS3, JavaScript  
 Development Environment:  Visual Studio Code
+
 12. Conclusion
 Zaneparks Hyper demonstrates the development of a multi-page retail website with product browsing, interactive features, form validation, and responsive styling.
