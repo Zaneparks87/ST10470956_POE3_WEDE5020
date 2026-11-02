@@ -3,510 +3,507 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | ZaneparksHyper South Africa</title>
+<title>Contact Us | ZaneparksHyper</title>
 <meta name="description" content="Contact ZaneparksHyper in Boksburg, South Africa, for customer support, product enquiries, stock availability, sizing assistance and click and collect information.">
 <meta name="keywords" content="contact ZaneparksHyper, Boksburg customer support, South Africa retail store, product enquiries, click and collect support">
 <link rel="stylesheet" href="css\styles.css">
 <style>
-        * {
-            box-sizing: border-box;
-        }
+:root {
+    --page-bg: #F5F2EC;
+    --text: #4E4034;
+    --muted: #8C7864;
+    --border: #D9D2C6;
+    --hover: #B7A996;
+    --white: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F2EC;
+    color: #4E4034;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    line-height: 1.6;
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #F5F2EC;
-            color: #4E4034;
-            font-family: "Source Sans Pro", Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-        }
-        .Global-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: #FFFFFF;
-            border-bottom: 1px solid #D9D2C6;
-            padding: 1.1rem 2rem;
-        }
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.25rem;
-        }
-        .brand-logo h1 {
-            font-family: "Daytona Light", Georgia, serif;
-            font-size: 2rem;
-            font-weight: normal;
-            color: #4E4034;
-            margin: 0;
-            letter-spacing: 0.02em;
-        }
-        .nav-link ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 1.4rem;
-            padding: 0;
-            margin: 0;
-        }
-        .nav-link a {
-            text-decoration: none;
-            color: #8C7864;
-            font-size: 0.85rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
-        .nav-link a:hover,
-        .nav-link a.active {
-            color: #4E4034;
-        }
-        .nav-link a.active {
-            border-bottom: 2px solid #4E4034;
-            padding-bottom: 5px;
-        }
-        .header-actions .cart-toggle-button {
-            background-color: #4E4034;
-            color: #F5F2EC;
-            padding: 0.7rem 1.2rem;
-            border: none;
-            border-radius: 3px;
-            font-family: inherit;
-            font-size: 0.85rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .header-actions .cart-toggle-button:hover {
-            background-color: #8C7864;
-        }
-        button:focus-visible,
-        input:focus-visible,
-        select:focus-visible,
-        textarea:focus-visible,
-        a:focus-visible {
-            outline: 3px solid #8C7864;
-            outline-offset: 3px;
-        }
-        .contact-page-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        .content-header-container {
-            text-align: center;
-            max-width: 760px;
-            margin: 0 auto 3rem;
-        }
-        .eyebrow {
-            color: #8C7864;
-            font-size: 0.8rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 0.6rem;
-        }
-        .content-header-container h2 {
-            font-family: "Daytona Light", Georgia, serif;
-            font-size: 2.7rem;
-            line-height: 1.2;
-            font-weight: normal;
-            color: #4E4034;
-            margin: 0 0 1rem;
-        }
-        .lead-paragraph {
-            color: #8C7864;
-            font-size: 1.05rem;
-            margin: 0;
-        }
-        .Contact-split-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
-            gap: 2rem;
-            align-items: start;
-        }
-        .form-card-container,
-        .details-section-card,
-        .instant-msg-line {
-            background-color: #FFFFFF;
-            border: 1px solid #D9D2C6;
-            border-radius: 4px;
-            box-shadow: 0 3px 12px rgba(78, 64, 52, 0.04);
-        }
-        .form-card-container {
-            padding: 2.5rem;
-            min-width: 0;
-        }
-        .form-card-container h3,
-        .instant-msg-line h3 {
-            font-family: "Daytona Light", Georgia, serif;
-            font-size: 1.55rem;
-            font-weight: normal;
-            color: #4E4034;
-            margin: 0 0 0.5rem;
-        }
-        .form-intro {
-            color: #8C7864;
-            margin: 0 0 2rem;
-            font-size: 0.95rem;
-        }
-        .form-row {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1.25rem;
-        }
-        .form-field {
-            margin-bottom: 1.4rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            min-width: 0;
-        }
-        .form-field label {
-            font-weight: bold;
-            font-size: 0.9rem;
-            color: #4E4034;
-        }
-        .form-control {
-            width: 100%;
-            padding: 0.85rem 1rem;
-            border: 1px solid #D9D2C6;
-            background-color: #F5F2EC;
-            color: #4E4034;
-            border-radius: 3px;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: border-color 0.2s ease;
-        }
-        .form-control:focus {
-            outline: none;
-            border-color: #4E4034;
-        }
-        .form-control::placeholder {
-            color: #8C7864;
-            opacity: 0.8;
-        }
-        textarea.form-control {
-            resize: vertical;
-            min-height: 150px;
-        }
-        .input-error {
-            border: 2px solid #DC3545 !important;
-            background-color: #FFF8F8 !important;
-        }
-        .btn-form-submit {
-            display: block;
-            width: 100%;
-            background-color: #4E4034;
-            color: #F5F2EC;
-            padding: 0.9rem 1.5rem;
-            font-family: inherit;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            border-radius: 3px;
-            border: none;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
-        }
-        .btn-form-submit:hover {
-            background-color: #8C7864;
-        }
-        .btn-form-submit:disabled {
-            opacity: 0.7;
-            cursor: not-allowed;
-        }
-        .feedback-box {
-            padding: 12px;
-            margin-top: 15px;
-            border-radius: 4px;
-            font-size: 0.95rem;
-            font-weight: bold;
-            display: none;
-            overflow-wrap: anywhere;
-        }
-        .feedback-box.error-msg {
-            display: block;
-            background-color: #F8D7DA;
-            color: #721C24;
-            border: 1px solid #F5C6CB;
-        }
-        .feedback-box.loading-msg {
-            display: block;
-            background-color: #FFF3CD;
-            color: #856404;
-            border: 1px solid #FFEEBA;
-        }
-        .feedback-box.success-msg {
-            display: block;
-            background-color: #D4EDDA;
-            color: #155724;
-            border: 1px solid #C3E6CB;
-        }
-        .instant-msg-line {
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        .instant-msg-line h3 {
-            font-size: 1.3rem;
-        }
-        .instant-msg-line p {
-            color: #8C7864;
-            margin: 0.5rem 0;
-        }
-        .instant-msg-line a {
-            color: #4E4034;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .instant-msg-line a:hover {
-            text-decoration: underline;
-        }
-        .location-details-sidebar {
-            min-width: 0;
-        }
-        .store-map {
-            display: block;
-            width: 100%;
-            height: 300px;
-            border: 1px solid #D9D2C6;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-        }
-        .details-section-card {
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            overflow-wrap: anywhere;
-        }
-        .details-section-card h4 {
-            font-family: "Daytona Light", Georgia, serif;
-            font-size: 1.3rem;
-            font-weight: normal;
-            margin: 0 0 1rem;
-            color: #4E4034;
-        }
-        .details-section-card p {
-            color: #8C7864;
-            font-size: 0.95rem;
-        }
-        .details-section-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .details-section-card li {
-            display: flex;
-            justify-content: space-between;
-            gap: 1rem;
-            padding: 0.6rem 0;
-            border-bottom: 1px solid #F0ECE5;
-            font-size: 0.9rem;
-        }
-        .details-section-card li:last-child {
-            border-bottom: none;
-        }
-        .details-section-card li span:last-child {
-            text-align: right;
-            color: #8C7864;
-        }
-        .social-action-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 0.7rem;
-            margin: 1rem 0;
-        }
-        .social-btn {
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            padding: 0.75rem;
-            background-color: #8C7864;
-            color: #F5F2EC;
-            font-weight: bold;
-            border-radius: 3px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-        }
-        .social-btn:hover {
-            background-color: #4E4034;
-        }
-        .whatsapp-line {
-            border-top: 1px solid #D9D2C6;
-            padding-top: 1rem;
-            margin-top: 1rem;
-        }
-        .whatsapp-line p {
-            margin: 0;
-            color: #4E4034;
-        }
-        .whatsapp-line a {
-            color: #8C7864;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .global-footer {
-            background-color: #4E4034;
-            color: #F5F2EC;
-            margin-top: 2rem;
-        }
-        .footer-newsletter-section {
-            max-width: 650px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        .footer-newsletter-section h3 {
-            font-family: "Daytona Light", Georgia, serif;
-            font-size: 2rem;
-            font-weight: normal;
-            margin: 0 0 0.5rem;
-        }
-        .footer-newsletter-section p {
-            color: #D9D2C6;
-            margin-bottom: 2rem;
-        }
-        .newsletter-inline-form {
-            display: flex;
-            gap: 0.5rem;
-            justify-content: center;
-        }
-        .form-input {
-            flex-grow: 1;
-            min-width: 0;
-            padding: 0.85rem 1rem;
-            border: 1px solid #8C7864;
-            background-color: #F5F2EC;
-            color: #4E4034;
-            border-radius: 3px;
-            max-width: 350px;
-            font-family: inherit;
-            font-size: 1rem;
-        }
-        .btn-submit {
-            background-color: #D9D2C6;
-            color: #4E4034;
-            padding: 0.85rem 1.5rem;
-            font-family: inherit;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-radius: 3px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .btn-submit:hover {
-            background-color: #B7A996;
-        }
-        .footer-bottom-bar {
-            text-align: center;
-            padding: 1.5rem;
-            border-top: 1px solid #8C7864;
-            font-size: 0.85rem;
-            color: #D9D2C6;
-        }
-        .footer-bottom-bar p {
-            margin: 0;
-        }
-        @media (max-width: 1000px) {
-            .Contact-split-layout {
-                grid-template-columns: minmax(0, 1fr) 300px;
-                gap: 1.5rem;
-            }
-
-            .nav-link ul {
-                gap: 0.9rem;
-            }
-        }
-        @media (max-width: 850px) {
-            .Contact-split-layout {
-                grid-template-columns: 1fr;
-            }
-            .location-details-sidebar {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 1rem;
-                align-items: start;
-            }
-            .store-map {
-                grid-column: 1 / -1;
-            }
-            .details-section-card {
-                margin-bottom: 0;
-            }
-        }
-        @media (max-width: 768px) {
-            .Global-header {
-                padding: 1rem;
-            }
-            .header-container {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-            .nav-link ul {
-                justify-content: center;
-                gap: 0.75rem 1rem;
-            }
-            .nav-link a {
-                font-size: 0.8rem;
-            }
-            .contact-page-container {
-                padding: 3rem 1rem;
-            }
-            .content-header-container h2 {
-                font-size: 2.2rem;
-            }
-            .form-card-container {
-                padding: 1.5rem;
-            }
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-            .location-details-sidebar {
-                grid-template-columns: 1fr;
-            }
-            .store-map {
-                grid-column: auto;
-            }
-            .newsletter-inline-form {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .form-input {
-                width: 100%;
-                max-width: 100%;
-            }
-            .footer-newsletter-section {
-                padding: 3rem 1rem;
-            }
-        }
-        @media (max-width: 420px) {
-            .brand-logo h1 {
-                font-size: 1.7rem;
-            }
-            .content-header-container h2 {
-                font-size: 1.9rem;
-            }
-            .details-section-card li {
-                flex-wrap: wrap;
-            }
-        }
+a {
+    color: inherit;
+}
+.Global-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D9D2C6;
+    padding: 1.1rem 2rem;
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+.brand-logo h1 {
+    font-family: "Daytona Light", Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #4E4034;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+.nav-link ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.4rem;
+    padding: 0;
+    margin: 0;
+}
+.nav-link a {
+    text-decoration: none;
+    color: #8C7864;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.nav-link a:hover,.nav-link a.active {
+    color: #4E4034;
+}
+.nav-link a.active {
+    border-bottom: 2px solid #4E4034;
+    padding-bottom: 5px;
+}
+.header-actions .cart-toggle-button {
+    background-color: #4E4034;
+    color: #F5F2EC;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.header-actions .cart-toggle-button:hover {
+    background-color: #8C7864;
+}
+button:focus-visible,input:focus-visible, select:focus-visible, textarea:focus-visible, a:focus-visible {
+    outline: 3px solid #8C7864;
+    outline-offset: 3px;
+}
+.contact-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+.content-header-container {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 3rem;
+}
+.eyebrow {
+    color: #8C7864;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.6rem;
+}
+.content-header-container h2 {
+    font-family: "Daytona Light", Georgia, serif;
+    font-size: 2.7rem;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #4E4034;
+    margin: 0 0 1rem;
+}
+.lead-paragraph {
+    color: #8C7864;
+    font-size: 1.05rem;
+    margin: 0;
+}
+.Contact-split-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
+    gap: 2rem;
+    align-items: start;
+}
+.form-card-container,.details-section-card,.instant-msg-line {
+    background-color: #FFFFFF;
+    border: 1px solid #D9D2C6;
+    border-radius: 4px;
+    box-shadow: 0 3px 12px rgba(78, 64, 52, 0.04);
+}
+.form-card-container {
+    padding: 2.5rem;
+    min-width: 0;
+}
+.form-card-container h3,.instant-msg-line h3 {
+    font-family: "Daytona Light", Georgia, serif;
+    font-size: 1.55rem;
+    font-weight: normal;
+    color: #4E4034;
+    margin: 0 0 0.5rem;
+}
+.form-intro {
+    color: #8C7864;
+    margin: 0 0 2rem;
+    font-size: 0.95rem;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+.form-field {
+    margin-bottom: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+}
+.form-field label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #4E4034;
+}
+.form-control {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid #D9D2C6;
+    background-color: #F5F2EC;
+    color: #4E4034;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+.form-control:focus {
+    outline: none;
+    border-color: #4E4034;
+}
+.form-control::placeholder {
+    color: #8C7864;
+    opacity: 0.8;
+}
+textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+.input-error {
+    border: 2px solid #DC3545 !important;
+    background-color: #FFF8F8 !important;
+}
+.btn-form-submit {
+    display: block;
+    width: 100%;
+    background-color: #4E4034;
+    color: #F5F2EC;
+    padding: 0.9rem 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+.btn-form-submit:hover {
+    background-color: #8C7864;
+}
+.btn-form-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.feedback-box {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: none;
+    overflow-wrap: anywhere;
+}
+.feedback-box.error-msg {
+    display: block;
+    background-color: #F8D7DA;
+    color: #721C24;
+    border: 1px solid #F5C6CB;
+}
+.feedback-box.loading-msg {
+    display: block;
+    background-color: #FFF3CD;
+    color: #856404;
+    border: 1px solid #FFEEBA;
+}
+.feedback-box.success-msg {
+    display: block;
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}
+.instant-msg-line {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+.instant-msg-line h3 {
+    font-size: 1.3rem;
+}
+.instant-msg-line p {
+    color: #8C7864;
+    margin: 0.5rem 0;
+}
+.instant-msg-line a {
+    color: #4E4034;
+    font-weight: bold;
+    text-decoration: none;
+}
+.instant-msg-line a:hover {
+    text-decoration: underline;
+}
+.location-details-sidebar {
+    min-width: 0;
+}
+.store-map {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #D9D2C6;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+.details-section-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow-wrap: anywhere;
+}
+.details-section-card h4 {
+    font-family: "Daytona Light", Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 0 0 1rem;
+    color: #4E4034;
+}
+.details-section-card p {
+    color: #8C7864;
+    font-size: 0.95rem;
+}
+.details-section-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.details-section-card li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #F0ECE5;
+    font-size: 0.9rem;
+}
+.details-section-card li:last-child {
+    border-bottom: none;
+}
+.details-section-card li span:last-child {
+    text-align: right;
+    color: #8C7864;
+}
+.social-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin: 1rem 0;
+}
+.social-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem;
+    background-color: #8C7864;
+    color: #F5F2EC;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.social-btn:hover {
+    background-color: #4E4034;
+}
+.whatsapp-line {
+    border-top: 1px solid #D9D2C6;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+.whatsapp-line p {
+    margin: 0;
+    color: #4E4034;
+}
+.whatsapp-line a {
+    color: #8C7864;
+    font-weight: bold;
+    text-decoration: none;
+}
+.global-footer {
+    background-color: #4E4034;
+    color: #F5F2EC;
+    margin-top: 2rem;
+}
+.footer-newsletter-section {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.footer-newsletter-section h3 {
+    font-family: "Daytona Light", Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 0.5rem;
+}
+.footer-newsletter-section p {
+    color: #D9D2C6;
+    margin-bottom: 2rem;
+}
+.newsletter-inline-form {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.form-input {
+    flex-grow: 1;
+    min-width: 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid #8C7864;
+    background-color: #F5F2EC;
+    color: #4E4034;
+    border-radius: 3px;
+    max-width: 350px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+.btn-submit {
+    background-color: #D9D2C6;
+    color: #4E4034;
+    padding: 0.85rem 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-submit:hover {
+    background-color: #B7A996;
+}
+.footer-bottom-bar {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid #8C7864;
+    font-size: 0.85rem;
+    color: #D9D2C6;
+}
+.footer-bottom-bar p {
+    margin: 0;
+}
+@media (max-width: 1000px) {
+    .Contact-split-layout {
+        grid-template-columns: minmax(0, 1fr) 300px;
+        gap: 1.5rem;
+    }
+.nav-link ul {
+    gap: 0.9rem;
+}
+}
+@media (max-width: 850px) {
+    .Contact-split-layout {
+        grid-template-columns: 1fr;
+    }
+.location-details-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+    }
+.store-map {
+    grid-column: 1 / -1;
+    }
+.details-section-card {
+    margin-bottom: 0;
+    }
+}
+@media (max-width: 768px) {
+    .Global-header {
+        padding: 1rem;
+    }
+.header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-link ul {
+    justify-content: center;
+    gap: 0.75rem 1rem;
+}
+.nav-link a {
+    font-size: 0.8rem;
+}
+.contact-page-container {
+    padding: 3rem 1rem;
+}
+.content-header-container h2 {
+    font-size: 2.2rem;
+}
+.form-card-container {
+    padding: 1.5rem;
+}
+.form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+.location-details-sidebar {
+    grid-template-columns: 1fr;
+}
+.store-map {
+    grid-column: auto;
+}
+.newsletter-inline-form {
+    flex-direction: column;
+    align-items: stretch;
+}
+.form-input {
+    width: 100%;
+    max-width: 100%;
+}
+.footer-newsletter-section {
+    padding: 3rem 1rem;
+}
+}
+@media (max-width: 420px) {
+    .brand-logo h1 {
+        font-size: 1.7rem;
+    }
+.content-header-container h2 {
+    font-size: 1.9rem;
+}
+.details-section-card li {
+    flex-wrap: wrap;
+}
+}
 </style>
 </head>
 <body>
@@ -525,76 +522,35 @@
                     <li><a href="enquiry.html">Enquiry</a></li>
                 </ul>
             </nav>
-
             <div class="header-actions">
-                <button
-                    id="cartTrackerbtn"
-                    class="cart-toggle-button"
-                    type="button"
-                    aria-label="View shopping cart"
-                >
-                    Cart (<span id="globalCartCount">0</span>)
-                </button>
+                <button id="cartTrackerbtn" class="cart-toggle-button" type="button" aria-label="View shopping cart">Cart (<span id="globalCartCount">0</span>)</button>
             </div>
-
         </div>
     </header>
-<hr>
     <main class="contact-page-container">
         <div class="content-header-container">
             <p class="eyebrow">WE ARE HERE TO HELP</p>
             <h2>Connect with our team</h2>
-            <p class="lead-paragraph">
-                Have questions about your order, product sizing or stock availability?
-                Our team is ready to assist you. Get in touch using the form below
-                or contact us directly.
-            </p>
+            <p class="lead-paragraph">Have questions about your order, product sizing or stock availability? Our team is ready to assist you. Get in touch using the form below or contact us directly.</p>
         </div>
-<hr>
         <div class="Contact-split-layout">
             <section class="form-card-container" aria-labelledby="contactFormHeading">
                 <h3 id="contactFormHeading">Submit an Inquiry</h3>
-                <p class="form-intro">
-                    Complete the form with your details and enquiry.
-                    Please provide as much information as possible.
-                </p>
+                <p class="form-intro">Complete the form with your details and enquiry. Please provide as much information as possible.</p>
                 <form id="catalogueInquiryForm" novalidate>
                     <div class="form-row">
                         <div class="form-field">
                             <label for="customerName">Full Name</label>
-                            <input
-                                type="text"
-                                id="customerName"
-                                name="customerName"
-                                class="form-control"
-                                placeholder="e.g. Thabo Khumalo"
-                                autocomplete="name"
-                                required
-                            >
+                            <input type="text" id="customerName" name="customerName" class="form-control" placeholder="e.g. Bongani Mashabela" autocomplete="name" required>
                         </div>
                         <div class="form-field">
                             <label for="customerEmail">Email Address</label>
-                            <input
-                                type="email"
-                                id="customerEmail"
-                                name="customerEmail"
-                                class="form-control"
-                                placeholder="e.g. thabo@domain.co.za"
-                                autocomplete="email"
-                                required
-                            >
+                            <input type="email" id="customerEmail" name="customerEmail" class="form-control" placeholder="e.g. Bongani@gmail.com" autocomplete="email" required>
                         </div>
-<hr>
                     </div>
                     <div class="form-field">
-                        <label for="targetCatalogue">
-                            Relevant Catalogue Department
-                        </label>
-                        <select
-                            id="targetCatalogue"
-                            name="targetCatalogue"
-                            class="form-control"
-                            required>
+                        <label for="targetCatalogue">Relevant Catalogue Department</label>
+                        <select id="targetCatalogue" name="targetCatalogue" class="form-control" required>
                             <option value="">-- Select Department --</option>
                             <option value="general">General Support Questions</option>
                             <option value="clothing">Clothing &amp; Apparel</option>
@@ -604,177 +560,64 @@
                             <option value="collection">Click &amp; Collect Tracking</option>
                         </select>
                     </div>
-
                     <div class="form-field">
                         <label for="messageBody">Detailed Message</label>
-                        <textarea
-                            id="messageBody"
-                            name="messageBody"
-                            class="form-control"
-                            rows="6"
-                            placeholder="Describe your question or sizing request in detail..."
-                            required
-                        ></textarea>
+                        <textarea id="messageBody" name="messageBody" class="form-control" rows="6" placeholder="Describe your question or sizing request in detail..." required></textarea>
                     </div>
-                    <button type="submit" class="btn-form-submit">
-                        Send Message
-                    </button>
-                    <div
-                        id="formFeedbackBox"
-                        class="feedback-box"
-                        role="status"
-                        aria-live="polite"
-                    ></div>
+                    <button type="submit" class="btn-form-submit">Send Message</button>
+                    <div id="formFeedbackBox" class="feedback-box" role="status" aria-live="polite"></div>
                 </form>
-
                 <div class="instant-msg-line">
-
                     <h3>Direct Support Line</h3>
-
-                    <p>
-                        Call our team Monday to Friday from 09:00 to 17:00.
-                    </p>
-
-                    <p>
-                        <strong>Support Phone:</strong>
-                        <a href="tel:0126691354">012 669 1354</a>
-                    </p>
-
+                    <p>Call our team Monday to Friday from 09:00 to 17:00.</p>
+                    <p><strong>Support Phone:</strong><a href="tel:0126691354">012 669 1354</a></p>
                 </div>
-
             </section>
-
             <aside class="location-details-sidebar" aria-label="Store information">
-                <iframe
-                    class="store-map"
-                    src="https://www.google.com/maps?q=Shop%20114%2C%20Bentel%20Ave%2C%20Jansen%20Park%2C%20Boksburg%2C%201462%2C%20South%20Africa&output=embed"
-                    title="ZaneparksHyper store location in Boksburg"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-
+                <iframe class="store-map"src="https://www.google.com/maps?q=Shop%20114%2C%20Bentel%20Ave%2C%20Jansen%20Park%2C%20Boksburg%2C%201462%2C%20South%20Africa&output=embed" title="ZaneparksHyper store location in Boksburg" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="details-section-card">
                     <h4>Store Operating Hours</h4>
                     <ul>
-                        <li>
-                            <span>Monday - Friday:</span>
-                            <span>09:00 - 18:00</span>
-                        </li>
-
-                        <li>
-                            <span>Saturday:</span>
-                            <span>09:00 - 16:00</span>
-                        </li>
-
-                        <li>
-                            <span>Sunday &amp; Public Holidays:</span>
-                            <span>09:00 - 14:00</span>
-                        </li>
-
+                        <li><span>Monday - Friday:</span><span>09:00 - 18:00</span></li>
+                        <li><span>Saturday:</span><span>09:00 - 16:00</span></li>
+                        <li><span>Sunday &amp; Public Holidays:</span><span>09:00 - 14:00</span></li>
                     </ul>
-
                 </div>
-
                 <div class="details-section-card">
-
                     <h4>Follow Our Channels</h4>
-
-                    <p>
-                        Get updates about new arrivals, special offers
-                        and seasonal collections.
-                    </p>
-
+                    <p>Get updates about new arrivals, special offers and seasonal collections.</p> 
                     <div class="social-action-buttons">
-                        <a
-                            href="https://instagram.com"
-                            class="social-btn"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Instagram
-                        </a>
-                        <a
-                            href="https://facebook.com"
-                            class="social-btn"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Facebook
-                        </a>
-                        <a
-                            href="mailto:zaneparkehyper@gmail.com"
-                            class="social-btn"
-                        >
-                            Email Us
-                        </a>
+                        <a href="https://instagram.com" class="social-btn" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://facebook.com" class="social-btn" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="mailto:zaneparkehyper@gmail.com" class="social-btn">Email Us</a>
                     </div>
-
                     <div class="whatsapp-line">
-                        <p>
-                            <strong>WhatsApp Customer Line:</strong>
-                        </p>
-                        <p>
-                            <a
-                                href="https://wa.me/27715692354"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                071 569 2354
-                            </a>
-                        </p>
+                        <p><strong>WhatsApp Customer Line:</strong></p>
+                        <p><a href="https://wa.me/27715692354" target="_blank" rel="noopener noreferrer">071 569 2354</a></p>
                     </div>
                 </div>
             </aside>
         </div>
     </main>
-
     <footer class="global-footer">
-        <section
-            class="footer-newsletter-section"
-            aria-labelledby="NewsletterHeading"
-        >
+        <section class="footer-newsletter-section" aria-labelledby="newsletterHeading">
             <div class="newsletter-content-box">
                 <h3 id="newsletterHeading">Stay Connected</h3>
                 <p> Subscribe to our newsletter for store updates, new arrivals and special offers.</p>
-                <form
-                    id="storeNewsletterform"
-                    class="newsletter-inline-form"
-                    novalidate>
-                    <label for="SubscriberEmail" class="visually-hidden">
-                        Email Address
-                    </label>
-                    <input
-                        type="email"
-                        id="SubscriberEmail"
-                        name="email"
-                        class="form-input"
-                        placeholder="Enter your email address"
-                        autocomplete="email"
-                        required>
-                    <button type="submit" class="btn-submit">
-                        Subscribe
-                    </button>
+                <form id="storeNewsletterform" class="newsletter-inline-form" novalidate>
+                    <label for="SubscriberEmail" class="visually-hidden">Email Address</label>
+                    <input type="email" id="SubscriberEmail" name="email" class="form-input" placeholder="Enter your email address" autocomplete="email" required>
+                    <button type="submit" class="btn-submit"> Subscribe </button>
                 </form>
-<hr>
-                <div
-                    id="newsletterFeedback"
-                    class="feedback-box"
-                    role="status"
-                    aria-live="polite"
-                ></div>
+                <div id="newsletterFeedback" class="feedback-box" role="status" aria-live="polite"></div>
             </div>
         </section>
-<hr>
         <div class="footer-bottom-bar">
-            <p>
-                &copy; 2026 ZaneparksHyper. All Rights Reserved.
-                Designed for premium retail excellence.
-            </p>
-           <nav class="footer-navigation" aria-label="Footer navigation">
-               <a href="contact.html">Contact Us</a>
-               <a href="enquiry.html">Enquiries</a>
-               <a href="order.html">Order/Delivery</a>
+            <p> &copy; 2026 ZaneparksHyper. All Rights Reserved. Designed for premium retail excellence.</p>
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <a href="contact.html">Contact Us</a>
+                <a href="enquiry.html">Enquiries</a>
+                <a href="order.html">Order/Delivery</a>
             </nav>
         </div>
     </footer>

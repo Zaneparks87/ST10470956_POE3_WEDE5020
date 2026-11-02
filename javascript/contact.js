@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
@@ -92,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-        
         if (message.length < 10) {
             markError(messageInput);
             valid = false;

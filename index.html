@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,471 +7,448 @@
 <meta name="description" content="Discover clothing, footwear, accessories, kids' fashion and home essentials at ZaneparksHyper in South Africa.">
 <meta name="keywords" content="ZaneparksHyper, South African retail, clothing, footwear, accessories, kids, home essentials">
 <link rel="stylesheet" href="css\styles.css">
-
 <style>
-        * {
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            background: #F5F2EC;
-            color: #4E4034;
-            font-family: "Source Sans Pro", Arial, sans-serif;
-            line-height: 1.6;
-        }
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-        a {
-            color: inherit;
-        }
-        .Global-header {
-            background: #ffff;
-            padding: 18px 4%;
-            border-bottom: 1px solid #D9D2C6;
-        }
-        .header-container {
-            max-width: 1400px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 25px;
-        }
-        .brand-logo {
-            flex-shrink: 0;
-        }
-        .brand-logo h1 {
-            font-family: Georgia, serif;
-            font-weight: normal;
-            font-size: 2rem;
-            letter-spacing: 1px;
-            margin: 0;
-            color: #4E4034;
-        }
-        .nav-link ul {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .nav-link a {
-            text-decoration: none;
-            color: #8C7864;
-            font-size: 0.82rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.7px;
-            transition: color 0.3s ease;
-        }
-        .nav-link a:hover,
-        .nav-link a:focus,
-        .nav-link a.active {
-            color: #4E4034;
-        }
-        .header-actions a {
-            display: inline-block;
-            text-decoration: none;
-            color: #F5F2EC;
-            background: #4E4034;
-            padding: 10px 18px;
-            font-size: 0.85rem;
-            transition: background 0.3s ease;
-        }
-
-        .header-actions a:hover {
-            background: #8C7864;
-        }
-        .hero-showcase {
-            min-height: 470px;
-            display: flex;
-            align-items: center;
-            padding: 65px 8%;
-            background:
-                linear-gradient(90deg, rgba(35, 29, 24, 0.76), rgba(35, 29, 24, 0.08)),
-                url("assets\women dress.jpg") center 35% / cover no-repeat;
-        }
-        .hero-content-box {
-            width: 100%;
-            max-width: 1300px;
-            margin: auto;
-        }
-        .hero-text {
-            max-width: 560px;
-            color: #605656;
-        }
-        .hero-tagline {
-            display: block;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.85rem;
-            margin-bottom: 15px;
-            color: #5c533f;
-        }
-        .hero-text h2 {
-            font-family: Georgia, serif;
-            font-weight: normal;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            line-height: 1.12;
-            margin: 0 0 20px;
-        }
-        .hero-text p {
-            font-size: 1.05rem;
-            max-width: 430px;
-            margin-bottom: 30px;
-            color: #7d6e53;
-        }
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .btn {
-            display: inline-block;
-            text-decoration: none;
-            text-align: center;
-            padding: 13px 25px;
-            font-size: 0.82rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.7px;
-            transition: all 0.3s ease;
-        }
-        .btn-primary {
-            background: #4E4034;
-            color: #FFFFFF;
-            border: 1px solid #4E4034;
-        }
-        .btn-primary:hover {
-            background: #8C7864;
-            border-color: #8C7864;
-        }
-        .btn-light {
-            background: #a99f8c;
-            color: #4E4034;
-            border: 1px solid #F5F2EC;
-        }
-        .btn-light:hover {
-            background: #afaba4;
-        }
-        .homepage-main-content {
-            max-width: 1400px;
-            margin: 65px auto;
-            padding: 0 5%;
-        }
-        .section-heading {
-            text-align: center;
-            margin-bottom: 35px;
-        }
-        .section-title {
-            font-family: Georgia, serif;
-            font-weight: normal;
-            font-size: 2.3rem;
-            margin: 0 0 8px;
-            color: #4E4034;
-        }
-        .section-subtitle {
-            color: #8C7864;
-            margin: 0;
-        }
-        .catalogue-cards-container {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 25px;
-        }
-        .catalogue-card {
-            background: #FFFFFF;
-            overflow: hidden;
-            border: 1px solid #D9D2C6;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .catalogue-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(78, 64, 52, 0.12);
-        }
-        .catalogue-card img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            object-position: center;
-        }
-        .card-body {
-            padding: 20px;
-        }
-        .card-body h3 {
-            font-family: Georgia, serif;
-            font-size: 1.4rem;
-            font-weight: normal;
-            margin: 0 0 8px;
-        }
-        .card-body p {
-            color: #8C7864;
-            font-size: 0.92rem;
-            margin: 0 0 18px;
-        }
-        .card-cta-link {
-            display: inline-block;
-            color: #4E4034;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 0.8rem;
-            letter-spacing: 0.6px;
-            border-bottom: 1px solid #8C7864;
-            padding-bottom: 3px;
-        }
-        .card-cta-link:hover {
-            color: #8C7864;
-        }
-        .benefits-section {
-            background: #E8E3DA;
-            padding: 30px 5%;
-            margin-top: 65px;
-        }
-        .benefits-container {
-            max-width: 1300px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-        }
-        .benefit-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            text-align: left;
-        }
-        .benefit-icon {
-            font-size: 1.7rem;
-        }
-        .benefit-item h3 {
-            font-size: 0.95rem;
-            margin: 0;
-            font-weight: 600;
-        }
-        .benefit-item p {
-            font-size: 0.82rem;
-            color: #8C7864;
-            margin: 2px 0 0;
-        }
-        .store-location-section {
-            margin: 70px auto;
-        }
-        .store-location-container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 5%;
-        }
-        .store-map-wrapper {
-            margin-top: 30px;
-            border: 1px solid #D9D2C6;
-            background: #FFFFFF;
-            padding: 8px;
-        }
-        .store-map-wrapper iframe {
-            display: block;
-            width: 100%;
-            height: 400px;
-            border: 0;
-        }
-        .global-footer {
-            background: #4E4034;
-            color: #F5F2EC;
-            margin-top: 60px;
-        }
-        .footer-newsletter-section {
-            max-width: 650px;
-            margin: auto;
-            padding: 55px 20px;
-            text-align: center;
-        }
-        .footer-newsletter-section h2 {
-            font-family: Georgia, serif;
-            font-size: 2rem;
-            font-weight: normal;
-            margin: 0 0 10px;
-        }
-        .footer-newsletter-section p {
-            color: #D9D2C6;
-            margin-bottom: 25px;
-        }
-        .newsletter-inline-form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
-        .form-input {
-            flex: 1 1 230px;
-            min-width: 0;
-            padding: 13px;
-            border: 1px solid #8C7864;
-            background: #F5F2EC;
-            color: #4E4034;
-        }
-        .btn-submit {
-            padding: 13px 22px;
-            border: 0;
-            background: #D9D2C6;
-            color: #4E4034;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-        .btn-submit:hover {
-            background: #B7A996;
-        }
-        .feedback-box {
-            padding: 12px;
-            margin-top: 15px;
-            border-radius: 4px;
-            font-size: 0.95rem;
-            font-weight: bold;
-            overflow-wrap: anywhere;
-        }
-        .feedback-box:empty {
-            display: none;
-        }
-        .feedback-box.error-msg {
-            background: #f8d7da;
-            color: #721c24;
-        }
-        .feedback-box.loading-msg {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .feedback-box.success-msg {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .footer-bottom-bar {
-            border-top: 1px solid #8C7864;
-            text-align: center;
-            padding: 18px;
-            color: #D9D2C6;
-            font-size: 0.85rem;
-        }
-
-        .footer-bottom-bar p {
-            margin: 0;
-        }
-
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        /* RESPONSIVE DESIGN */
-
-        @media (max-width: 900px) {
-            .header-container {
-                flex-direction: column;
-            }
-
-            .nav-link ul {
-                justify-content: center;
-                gap: 15px;
-            }
-
-            .catalogue-cards-container {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .benefits-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .Global-header {
-                padding: 18px 15px;
-            }
-
-            .brand-logo h1 {
-                font-size: 1.7rem;
-            }
-
-            .nav-link ul {
-                gap: 10px 15px;
-            }
-
-            .nav-link a {
-                font-size: 0.75rem;
-            }
-
-            .hero-showcase {
-                min-height: 430px;
-                padding: 45px 22px;
-                background-position: 60% center;
-            }
-
-            .hero-text h2 {
-                font-size: 2.5rem;
-            }
-
-            .hero-text p {
-                font-size: 0.95rem;
-            }
-
-            .homepage-main-content {
-                margin: 45px auto;
-                padding: 0 18px;
-            }
-
-            .section-title {
-                font-size: 1.9rem;
-            }
-
-            .catalogue-cards-container {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .catalogue-card img {
-                height: 300px;
-            }
-
-            .benefits-container {
-                grid-template-columns: 1fr;
-                gap: 22px;
-            }
-
-            .benefit-item {
-                justify-content: flex-start;
-            }
-
-            .newsletter-inline-form {
-                flex-direction: column;
-            }
-
-            .form-input,
-            .btn-submit {
-                width: 100%;
-            }
-
-            .store-map-wrapper iframe {
-                height: 320px;
-            }
-        }
-    </style>
+:root {
+    --page-bg: #F5F2EC;
+    --text: #4E4034;
+    --muted: #8C7864;
+    --border: #D9D2C6;
+    --hover: #B7A996;
+    --white: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: #F5F2EC;
+    color: #4E4034;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    line-height: 1.6;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+a {
+    color: inherit;
+}
+.Global-header {
+    background: #ffff;
+    padding: 18px 4%;
+    border-bottom: 1px solid #D9D2C6;
+}
+.header-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.brand-logo {
+    flex-shrink: 0;
+}
+.brand-logo h1 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 2rem;
+     letter-spacing: 1px;
+    margin: 0;
+    color: #4E4034;
+}
+.nav-link ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-link a {
+    text-decoration: none;
+    color: #8C7864;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    transition: color 0.3s ease;
+}
+.nav-link a:hover,.nav-link a:focus,.nav-link a.active {
+    color: #4E4034;
+}
+.header-actions a {
+    display: inline-block;
+    text-decoration: none;
+    color: #F5F2EC;
+    background: #4E4034;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    transition: background 0.3s ease;
+}
+.header-actions a:hover {
+    background: #8C7864;
+}
+.hero-showcase {
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    padding: 65px 8%;
+    background:
+        linear-gradient(90deg, rgba(35, 29, 24, 0.76), rgba(35, 29, 24, 0.08)),
+        url("assets\women dress.jpg") center 35% / cover no-repeat;
+}
+.hero-content-box {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+.hero-text {
+    max-width: 560px;
+    color: #605656;
+        }
+.hero-tagline {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    color: #5c533f;
+}
+.hero-text h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.12;
+    margin: 0 0 20px;
+}
+.hero-text p {
+    font-size: 1.05rem;
+    max-width: 430px;
+    margin-bottom: 30px;
+    color: #7d6e53;
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px 25px;
+    font-size: 0.82rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background: #4E4034;
+    color: #FFFFFF;
+    border: 1px solid #4E4034;
+}
+.btn-primary:hover {
+    background: #8C7864;
+    border-color: #8C7864;
+}
+.btn-light {
+    background: #a99f8c;
+    color: #4E4034;
+    border: 1px solid #F5F2EC;
+}
+.btn-light:hover {
+    background: #afaba4;
+}
+.homepage-main-content {
+    max-width: 1400px;
+    margin: 65px auto;
+    padding: 0 5%;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.section-title {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 2.3rem;
+    margin: 0 0 8px;
+    color: #4E4034;
+}
+.section-subtitle {
+    color: #8C7864;
+    margin: 0;
+}
+.catalogue-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+.catalogue-card {
+    background: #FFFFFF;
+    overflow: hidden;
+    border: 1px solid #D9D2C6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.catalogue-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(78, 64, 52, 0.12);
+}
+.catalogue-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+.card-body {
+    padding: 20px;
+}
+.card-body h3 {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0 0 8px;
+}
+.card-body p {
+    color: #8C7864;
+    font-size: 0.92rem;
+    margin: 0 0 18px;
+}
+.card-cta-link {
+    display: inline-block;
+    color: #4E4034;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+    border-bottom: 1px solid #8C7864;
+    padding-bottom: 3px;
+}
+.card-cta-link:hover {
+    color: #8C7864;
+}
+.benefits-section {
+    background: #E8E3DA;
+    padding: 30px 5%;
+    margin-top: 65px;
+}
+.benefits-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.benefit-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: left;
+}
+.benefit-icon {
+    font-size: 1.7rem;
+}
+.benefit-item h3 {
+    font-size: 0.95rem;
+    margin: 0;
+    font-weight: 600;
+}
+.benefit-item p {
+    font-size: 0.82rem;
+    color: #8C7864;
+    margin: 2px 0 0;
+}
+.store-location-section {
+    margin: 70px auto;
+}
+.store-location-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 5%;
+}
+.store-map-wrapper {
+    margin-top: 30px;
+    border: 1px solid #D9D2C6;
+    background: #FFFFFF;
+    padding: 8px;
+}
+.store-map-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 400px;
+    border: 0;
+    }
+.global-footer {
+    background: #4E4034;
+    color: #F5F2EC;
+    margin-top: 60px;
+}
+.footer-newsletter-section {
+    max-width: 650px;
+    margin: auto;
+    padding: 55px 20px;
+    text-align: center;
+}
+.footer-newsletter-section h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+.footer-newsletter-section p {
+    color: #D9D2C6;
+    margin-bottom: 25px;
+}
+.newsletter-inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     gap: 8px;
+}
+.form-input {
+    flex: 1 1 230px;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #8C7864;
+    background: #F5F2EC;
+    color: #4E4034;
+}
+.btn-submit {
+    padding: 13px 22px;
+    border: 0;
+    background: #D9D2C6;
+    color: #4E4034;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background: #B7A996;
+}
+.feedback-box {
+    padding: 12px;
+     margin-top: 15px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+.feedback-box:empty {
+    display: none;
+}
+.feedback-box.error-msg {
+    background: #f8d7da;
+    color: #721c24;
+}
+.feedback-box.loading-msg {
+    background: #fff3cd;
+    color: #856404;
+}
+.feedback-box.success-msg {
+    background: #d4edda;
+    color: #155724;
+}
+.footer-bottom-bar {
+    border-top: 1px solid #8C7864;
+    text-align: center;
+    padding: 18px;
+    color: #D9D2C6;
+    font-size: 0.85rem;
+}
+.footer-bottom-bar p {
+    margin: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+    }
+.nav-link ul {
+    justify-content: center;
+    gap: 15px;
+}
+.catalogue-cards-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+.benefits-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 600px) {
+    .Global-header {
+        padding: 18px 15px;
+    }
+.brand-logo h1 {
+    font-size: 1.7rem;
+}
+.nav-link ul {
+    gap: 10px 15px;
+}
+.nav-link a {
+    font-size: 0.75rem;
+}
+.hero-showcase {
+    min-height: 430px;
+    padding: 45px 22px;
+    background-position: 60% center;
+}
+.hero-text h2 {
+    font-size: 2.5rem;
+}
+.hero-text p {
+    font-size: 0.95rem;
+}
+.homepage-main-content {
+    margin: 45px auto;
+    padding: 0 18px;
+}
+.section-title {
+    font-size: 1.9rem;
+}
+.catalogue-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.catalogue-card img {
+    height: 300px;
+}
+.benefits-container {
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+.benefit-item {
+    justify-content: flex-start;
+}
+.newsletter-inline-form {
+    flex-direction: column;
+}
+.form-input,.btn-submit {
+    width: 100%;
+}
+.store-map-wrapper iframe {
+    height: 320px;
+}
+    }
+</style>
 </head>
 <body>
     <header class="Global-header">
@@ -496,241 +472,138 @@
         </div>
     </header>
     <main>
-<hr>
         <section class="hero-showcase" aria-labelledby="heroHeading">
             <div class="hero-content-box">
                 <div class="hero-text">
                     <span class="hero-tagline">Style for Every Day</span>
                     <h2 id="heroHeading">Everyday Essentials. Timeless Style.</h2>
-                    <p>
-                        Discover clothing, footwear, accessories and home essentials
-                        selected to bring comfort and style to everyday living.
-                    </p>
+                    <p>Discover clothing, footwear, accessories and home essentials selected to bring comfort and style to everyday living.</p>
                     <div class="hero-actions">
-                        <a href="catalogue.html" class="btn btn-primary">
-                            Shop Collection
-                        </a>
-                        <a href="catalogue.html#women" class="btn btn-light">
-                            Explore Women
-                        </a>
+                        <a href="catalogue.html" class="btn btn-primary">Shop Collection</a>
+                        <a href="catalogue.html#women" class="btn btn-light">Explore Women</a>
                     </div>
                 </div>
             </div>
         </section>
-<hr>
-        <section class="homepage-main-content catalogue-grid-section"
-                 aria-labelledby="catalogueGridHeading">
+        <section class="homepage-main-content catalogue-grid-section" aria-labelledby="catalogueGridHeading">
             <div class="section-heading">
-                <h2 id="catalogueGridHeading" class="section-title">
-                    Shop by Department
-                </h2>
-                <p class="section-subtitle">
-                    Explore our collections and find something for everyone.
-                </p>
+                <h2 id="catalogueGridHeading" class="section-title">Shop by Department</h2>
+                <p class="section-subtitle"> Explore our collections and find something for everyone. </p>
             </div>
-
             <div class="catalogue-cards-container">
                 <article class="catalogue-card">
-                    <img src="assets\women clothing (2).jpg"
-                         alt="Women's summer fashion collection"
-                         loading="lazy">
+                    <img src="assets\women clothing (2).jpg" alt="Women's summer fashion collection" loading="lazy">
                     <div class="card-body">
                         <h3>Women</h3>
-                        <p>
-                            Explore everyday clothing, stylish tops,
-                            dresses, denim and more.
-                        </p>
-                        <a href="catalogue.html#women" class="card-cta-link">
-                            Shop Women
-                        </a>
+                        <p>Explore everyday clothing, stylish tops,dresses, denim and more.</p>
+                        <a href="catalogue.html#women" class="card-cta-link">Shop Women</a>
                     </div>
                 </article>
-
                 <article class="catalogue-card">
-                    <img src="assets\Quater jersry.jpg"
-                         alt="Men's casual clothing collection"
-                         loading="lazy">
+                    <img src="assets\Quater jersry.jpg" alt="Men's casual clothing collection"loading="lazy">
                     <div class="card-body">
                         <h3>Men</h3>
-                        <p>
-                            Discover comfortable everyday outfits,
-                            shirts, denim and casual essentials.
-                        </p>
-                        <a href="catalogue.html#men" class="card-cta-link">
-                            Shop Men
-                        </a>
+                        <p>Discover comfortable everyday outfits, shirts, denim and casual essentials.</p>
+                        <a href="catalogue.html#men" class="card-cta-link"> Shop Men</a>
                     </div>
                 </article>
-
                 <article class="catalogue-card">
-                    <img src="assets\kids.jpg"
-                         alt="Children's clothing collection"
-                         loading="lazy">
-                    <div class="card-body">
-                        <h3>Kids</h3>
-                        <p>
-                            Find everyday clothing and comfortable
-                            essentials for little ones.
-                        </p>
-                        <a href="catalogue.html#kids" class="card-cta-link">
-                            Shop Kids
-                        </a>
-                    </div>
-                </article>
-
-                <article class="catalogue-card">
-                    <img src="assets\earrings.jpg"
-                         alt="Fashion accessories"
-                         loading="lazy">
-                    <div class="card-body">
-                        <h3>Accessories</h3>
-                        <p>
-                            Complete your look with watches,
-                            jewellery and everyday accessories.
-                        </p>
-                        <a href="catalogue.html#accessories" class="card-cta-link">
-                            Shop Accessories
-                        </a>
-                    </div>
-                </article>
-
-                <article class="catalogue-card">
-                    <img src="assets\Sandles.jpg"
-                         alt="Footwear collection"
-                         loading="lazy">
-                    <div class="card-body">
-                        <h3>Footwear</h3>
-                        <p>
-                            Browse footwear options for comfort,
-                            everyday wear and different occasions.
-                        </p>
-                        <a href="catalogue.html#footwear" class="card-cta-link">
-                            Shop Footwear
-                        </a>
-                    </div>
-                </article>
-
-                <article class="catalogue-card">
-                    <img src="assets\glassware.jpg"
-                         alt="Home glassware collection"
-                         loading="lazy">
-
-                    <div class="card-body">
-                        <h3>Home &amp; Living</h3>
-                        <p>
-                            Refresh your home with glassware,
-                            kitchenware and everyday essentials.
-                        </p>
-                        <a href="catalogue.html#homeware" class="card-cta-link">
-                            Shop Home &amp; Living
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <section class="benefits-section" aria-label="Our shopping benefits">
-            <div class="benefits-container">
-                <div class="benefit-item">
-                    <span class="benefit-icon" aria-hidden="true">◇</span>
-                    <div>
-                        <h3>Convenient Shopping</h3>
-                        <p>Browse our collections online</p>
-                    </div>
+                <img src="assets\kids.jpg" alt="Children's clothing collection" loading="lazy">
+                <div class="card-body">
+                    <h3>Kids</h3>
+                    <p>Find everyday clothing and comfortable essentials for little ones.</p>
+                    <a href="catalogue.html#kids" class="card-cta-link">Shop Kids</a>
                 </div>
-
-                <div class="benefit-item">
-                    <span class="benefit-icon" aria-hidden="true">↻</span>
-                    <div>
-                        <h3>Customer Support</h3>
-                        <p>We're here to help with enquiries</p>
-                    </div>
+            </article>
+            <article class="catalogue-card">
+                <img src="assets\earrings.jpg" alt="Fashion accessories" loading="lazy">
+                <div class="card-body">
+                    <h3>Accessories</h3>
+                    <p>Complete your look with watches, jewellery and everyday accessories.</p>
+                    <a href="catalogue.html#accessories" class="card-cta-link">Shop Accessories</a>
                 </div>
-
-                <div class="benefit-item">
-                    <span class="benefit-icon" aria-hidden="true">□</span>
-                    <div>
-                        <h3>Everyday Essentials</h3>
-                        <p>Clothing, footwear and home items</p>
-                    </div>
+            </article>
+            <article class="catalogue-card">
+                <img src="assets\Sandles.jpg" alt="Footwear collection" loading="lazy">
+                <div class="card-body">
+                    <h3>Footwear</h3>
+                    <p> Browse footwear options for comfort, everyday wear and different occasions.</p>
+                    <a href="catalogue.html#footwear" class="card-cta-link"> Shop Footwear</a>
                 </div>
-
-                <div class="benefit-item">
-                    <span class="benefit-icon" aria-hidden="true">♡</span>
-                    <div>
-                        <h3>Something for Everyone</h3>
-                        <p>Collections for the whole family</p>
-                    </div>
+            </article>
+            <article class="catalogue-card">
+                <img src="assets\glassware.jpg" alt="Home glassware collection" loading="lazy">
+                <div class="card-body">
+                    <h3>Home &amp; Living</h3>
+                    <p> Refresh your home with glassware, kitchenware and everyday essentials.</p>
+                    <a href="catalogue.html#homeware" class="card-cta-link">Shop Home &amp; Living</a>
                 </div>
-            </div>
-        </section>
-
-        <section class="store-location-section"
-                 aria-labelledby="storeLocationHeading">
-            <div class="store-location-container">
-                <div class="section-heading">
-                    <h2 id="storeLocationHeading" class="section-title">
-                        Visit Our Store
-                    </h2>
-                    <p class="section-subtitle">
-                        Find ZaneparksHyper at Shop 114, Bentel Ave,
-                        Jansen Park, Boksburg.
-                    </p>
-                </div>
-<hr>
-                <div class="store-map-wrapper">
-                    <iframe
-                        src="https://www.google.com/maps?q=Shop%20114%2C%20Bentel%20Ave%2C%20Jansen%20Park%2C%20Boksburg%2C%201462%2C%20South%20Africa&output=embed"
-                        title="Map showing the ZaneparksHyper store location in Boksburg"
-                        loading="lazy"
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-    </main>
-<hr>
-    <footer class="global-footer">
-        <section class="footer-newsletter-section"
-                 aria-labelledby="newsletterHeading">
-            <div class="newsletter-content-box">
-                <h2 id="newsletterHeading">Stay Connected</h2>
-                <p>
-                    Subscribe to our newsletter for store updates,
-                    new arrivals and special offers.
-                </p>
-                <form id="storeNewsletterform"
-                      class="newsletter-inline-form"
-                      novalidate>
-                    <label for="SubscriberEmail" class="visually-hidden">
-                        Email address
-                    </label>
-                    <input
-                        type="email"
-                        id="SubscriberEmail"
-                        name="email"
-                        class="form-input"
-                        placeholder="Enter your email address"
-                        autocomplete="email"
-                        required>
-                    <button type="submit" class="btn-submit">
-                        Subscribe
-                    </button>
-                </form>
-                <div id="newsletterFeedback"
-                     class="feedback-box"
-                     role="status"
-                     aria-live="polite">
-                </div>
-            </div>
-        </section>
-        <div class="footer-bottom-bar">
-            <p>&copy; 2026 ZaneparksHyper. All Rights Reserved.</p>
+            </article>
         </div>
-    </footer>
-    <script src="javascript/maps.js" defer></script>
-    <script src="javascript/newsletter.js" defer></script>
+    </section>
+    <section class="benefits-section" aria-label="Our shopping benefits">
+        <div class="benefits-container">
+            <div class="benefit-item">
+                <span class="benefit-icon" aria-hidden="true">◇</span>
+                <div>
+                    <h3>Convenient Shopping</h3>
+                    <p>Browse our collections online</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon" aria-hidden="true">↻</span>
+                <div>
+                    <h3>Customer Support</h3>
+                    <p>We're here to help with enquiries</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon" aria-hidden="true">□</span>
+                <div>
+                    <h3>Everyday Essentials</h3>
+                    <p>Clothing, footwear and home items</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon" aria-hidden="true">♡</span>
+                <div>
+                    <h3>Something for Everyone</h3>
+                    <p>Collections for the whole family</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="store-location-section" aria-labelledby="storeLocationHeading">
+        <div class="store-location-container">
+            <div class="section-heading">
+                <h2 id="storeLocationHeading" class="section-title"> Visit Our Store</h2>
+                <p class="section-subtitle">Find ZaneparksHyper at Shop 114, Bentel Ave,Jansen Park, Boksburg.</p>
+            </div>
+            <div class="store-map-wrapper">
+                <iframe src="https://www.google.com/maps?q=Shop%20114%2C%20Bentel%20Ave%2C%20Jansen%20Park%2C%20Boksburg%2C%201462%2C%20South%20Africa&output=embed" title="Map showing the ZaneparksHyper store location in Boksburg" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="global-footer">
+    <section class="footer-newsletter-section" aria-labelledby="newsletterHeading">
+        <div class="newsletter-content-box">
+            <h2 id="newsletterHeading">Stay Connected</h2>
+            <p> Subscribe to our newsletter for store updates, new arrivals and special offers.</p>
+            <form id="storenewsletterform" class="newsletter-inline-form"novalidate>
+                <label for="SubscriberEmail" class="visually-hidden">Email address</label>
+                <input type="email" id="SubscriberEmail" name="email" class="form-input" placeholder="Enter your email address" autocomplete="email" required>
+                <button type="submit" class="btn-submit">Subscribe</button>
+                <p id="newsletterMessage" aria-live="polite"></p>
+            </form>
+            <div id="newsletterFeedback" class="feedback-box" role="status" aria-live="polite"></div>
+        </div>
+    </section>
+    <div class="footer-bottom-bar">
+        <p>&copy; 2026 ZaneparksHyper. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="javascript/maps.js" defer></script>
+<script src="javascript/newsletter.js" defer></script>
 </body>
 </html>

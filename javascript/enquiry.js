@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!panel) {
             return;
         }
-
         button.setAttribute("aria-expanded", "false");
         panel.hidden = true;
         panel.style.maxHeight = "0";
@@ -59,8 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
-
   
     const enquiryForm = document.getElementById("enquiryForm");
     const feedback = document.getElementById("enquiryFeedback");
@@ -129,10 +126,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const message = messageInput.value.trim();
 
         
-        if (name.length < 2) {
+        if (name.length < 10) {
             markFieldError(
                 nameInput,
-                "Please enter your name using at least 2 characters."
+                "Please enter your name using at least 10 characters."
             );
             return;
         }

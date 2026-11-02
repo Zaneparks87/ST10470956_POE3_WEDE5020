@@ -70,26 +70,48 @@ changed my contact_us to Contact
  WOMEN DRESS- PINTREST FROM authsnez_
  WOMEN STRIGHT JEANS -PINTRESRT FROM Straight Leg Jeans Pattern For Women
 margaretperng
-womwn clohing2 -pintrest fom
-men clothing -pintrest from
-men stright jean pintrest from
-men linen set -pintrest from
-everyday tops women - pintrest from
-quater jersy pintrest from Huston.Hallway
+womwn clohing2 -pintrest 
+men clothing -pintrest
+men stright jean pintrest
+men linen set -pintrest 
+everyday tops women - pintrest f
+quater jersy pintrest  Huston.Hallway
 hustonhallway
 kiDs tracksuits pintrest - ayah0194
 watches pintrest from day and night watches
 and the rest of the picture are from pintrest as well,just donr remember the owners 
 kids tops- pintrest
+women blue set frompintrest
+women tops from pintrest
+women dress from pintrest
+glassware from pintrest
+mugs from pintrests
+kids clothing pintrest 
+ crocs from crocs
+  women watches from pintrest earrings pintrest
+  bags from pintrest
+  shortsleeve baby vests pintrest
+  men lilen pintrest
+  women sandles pintrest men sandles pintrest
+  sunnies pintrest
+  plates pintrest
+launched my website and the about had issues so im fixing it
+add a google maps loction being boksburg mall location:https://www.google.com/maps?q=Shop%20114%2C%20Bentel%20Ave%2C%20Jansen%20Park%2C%20Boksburg%2C%201462%2C%20South%20Africa&output=embed"
+changed the previous subscription tag line to Subscribe to our newsletter for store updates, new arrivals and special offers.
+Published my website and my about us had an error i had to fix 
+about to commit now
+
 Reference list
-2. Google (n.d.) *Introduction to robots.txt*. Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/robots/intro (Accessed: 1 November 2026).
+2. Google (n.d.)  Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/robots/intro (Accessed: 1 November 2026).
 
-3. Google (n.d.) *Build and submit a sitemap*. Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap (Accessed: 1 November 2026).
+3. Google (n.d.) . Google Search Central. Available at: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap (Accessed: 1 November 2026).
 
-4. Mozilla (n.d.) *HTML: HyperText Markup Language*. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 1 November 2026).
+4. Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 25 October 2026).
 
-5. Mozilla (n.d.) *CSS: Cascading Style Sheets*. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 1 November 2026).
+5. Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 26 October 2026).
 
-6. Mozilla (n.d.) *JavaScript*. MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 1 November 2026).
+6. Mozilla (n.d.) . MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 26 October 2026).
 
-7. World Wide Web Consortium (W3C) (n.d.) *Web Content Accessibility Guidelines (WCAG) 2.2*. Available at: https://www.w3.org/TR/WCAG22/ (Accessed: 1 November 2026).
+7. World Wide Web Consortium (W3C) (n.d.) . Available at: https://www.w3.org/TR/WCAG22/ (Accessed: 1 November 2026).
+8. W3School .Available at: https://www.w3schools.com/js/default.asp(Accessed:31 October 2026)
+9. pintrest for pictures

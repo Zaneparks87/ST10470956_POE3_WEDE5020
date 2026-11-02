@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,460 +8,423 @@
 <meta name="keywords" content="ZaneparksHyper orders, checkout South Africa, Gauteng delivery, nationwide courier, click and collect, Boksburg retail">
 <link rel="stylesheet" href="css\styles.css">
 <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            background: #F5F2EC;
-            color: #4E4034;
-            font-family: "Source Sans Pro", Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #D9D2C6;
-            margin: 0;
-        }
-
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-        .announcement-bar {
-            background: #4E4034;
-            color: #F5F2EC;
-            text-align: center;
-            padding: 8px 15px;
-            font-size: 0.8rem;
-            letter-spacing: 0.5px;
-        }
-        .Global-header {
-            background: #ffff;
-            padding: 18px 4%;
-            border-bottom: 1px solid #D9D2C6;
-        }
-        .header-container {
-            max-width: 1400px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 25px;
-        }
-        .brand-logo {
+:root {
+    --page-bg: #F5F2EC;
+    --text: #4E4034;
+    --muted: #8C7864;
+    --border: #D9D2C6;
+    --hover: #B7A996;
+    --white: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ body {
+    margin: 0;
+    background: #F5F2EC;
+    color: #4E4034;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    line-height: 1.6;
+}
+a {
+    color: inherit;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #D9D2C6;
+    margin: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.Global-header {
+    background: #ffff;
+    padding: 18px 4%;
+    border-bottom: 1px solid #D9D2C6;
+}
+.header-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.brand-logo {
             flex-shrink: 0;
-        }
-        .brand-logo h1 {
-            font-family: Georgia, serif;
-            font-weight: normal;
-            font-size: 2rem;
-            letter-spacing: 1px;
-            margin: 0;
-            color: #4E4034;
-        }
-        .nav-link ul {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .nav-link a {
-            text-decoration: none;
-            color: #8C7864;
-            font-size: 0.82rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.7px;
-            transition: color 0.3s ease;
-        }
-        .nav-link a:hover,
-        .nav-link a:focus,
-        .nav-link a.active {
-            color: #4E4034;
-        }
-        .header-actions a {
-            display: inline-block;
-            text-decoration: none;
-            color: #F5F2EC;
-            background: #4E4034;
-            padding: 10px 18px;
-            font-size: 0.85rem;
-            transition: background 0.3s ease;
-        }
-        .header-actions a:hover {
-            background: #8C7864;
-        }
-        .order-page-container {
-            max-width: 1300px;
-            margin: 65px auto;
-            padding: 0 5%;
-        }
-        .content-header-container {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .content-header-container h2 {
-            font-family: Georgia, serif;
-            font-size: clamp(2.2rem, 4vw, 3rem);
-            font-weight: normal;
-            line-height: 1.2;
-            margin: 0 0 12px;
-        }
-        .lead-paragraph {
-            color: #8C7864;
-            max-width: 650px;
-            margin: auto;
-        }
-        .page-eyebrow {
-            display: block;
-            color: #8C7864;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.8rem;
-            margin-bottom: 12px;
-        }
-        .order-split-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) 350px;
-            gap: 30px;
-            align-items: start;
-        }
-
-        .form-card-section,
-        .details-section-card {
-            background: #FFFFFF;
-            padding: 35px;
-            border: 1px solid #D9D2C6;
-        }
-
-        .form-card-section h3 {
-            font-family: Georgia, serif;
-            font-size: 1.7rem;
-            font-weight: normal;
-            margin: 0 0 25px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 20px;
-        }
-
-        .form-field {
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-            margin-bottom: 22px;
-            min-width: 0;
-        }
-
-        .form-field label,
-        .delivery-legend {
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 13px 14px;
-            border: 1px solid #D9D2C6;
-            background: #F5F2EC;
-            color: #4E4034;
-            font-family: inherit;
-            font-size: 1rem;
-            border-radius: 0;
-        }
-
-        .form-control:focus {
-            outline: 2px solid #8C7864;
-            outline-offset: 2px;
-        }
-
-        .form-control::placeholder {
-            color: #8C7864;
-            opacity: 0.8;
-        }
-        .delivery-fieldset {
-            border: 1px solid #D9D2C6;
-            padding: 20px;
-            margin: 0 0 25px;
-            background: #F5F2EC;
-        }
-        .delivery-legend {
-            padding: 0 8px;
-            margin-bottom: 10px;
-        }
-        .radio-selection-block {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        .radio-custom-label {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            cursor: pointer;
-            font-size: 0.95rem;
-        }
-        .radio-custom-label input {
-            margin-top: 6px;
-            accent-color: #4E4034;
-        }
-        #shippingAddressBlock {
-            max-height: 300px;
-            opacity: 1;
-            overflow: hidden;
-            transition: max-height 0.4s ease,
-                        opacity 0.4s ease,
-                        margin-bottom 0.4s ease;
-        }
-        #shippingAddressBlock.hidden-address {
-            max-height: 0;
-            opacity: 0;
-            margin-bottom: 0;
-            pointer-events: none;
-        }
-        .input-error {
-            border: 2px solid #DC3545 !important;
-            background: #FFF8F8 !important;
-        }
-        .btn-form-submit {
-            display: block;
-            width: 100%;
-            padding: 15px 20px;
-            background: #4E4034;
-            color: #F5F2EC;
-            border: 1px solid #4E4034;
-            font-family: inherit;
-            font-size: 0.9rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .btn-form-submit:hover {
-            background: #8C7864;
-            border-color: #8C7864;
-        }
-        .btn-form-submit:focus-visible,
-        .btn-submit:focus-visible,
-        .header-actions a:focus-visible {
-            outline: 2px solid #8C7864;
-            outline-offset: 3px;
-        }
-        .details-section-card {
-            margin-bottom: 20px;
-        }
-
-        .details-section-card h4 {
-            font-family: Georgia, serif;
-            font-size: 1.5rem;
-            font-weight: normal;
-            margin: 0 0 15px;
-        }
-
-        .details-section-card p {
-            color: #8C7864;
-            font-size: 0.95rem;
-        }
-
-        .details-section-card ul {
-            padding-left: 20px;
-            margin-bottom: 0;
-        }
-
-        .details-section-card li {
-            margin-bottom: 14px;
-            color: #8C7864;
-            font-size: 0.92rem;
-        }
-
-        .details-section-card li strong {
-            color: #4E4034;
-        }
-
-        .delivery-note {
-            background: #E8E3DA;
-            padding: 18px;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-        .feedback-box {
-            padding: 12px;
-            margin-top: 15px;
-            border-radius: 3px;
-            font-size: 0.95rem;
-            font-weight: bold;
-            display: none;
-            overflow-wrap: anywhere;
-        }
-        .feedback-box.error-msg {
-            display: block;
-            background: #F8D7DA;
-            color: #721C24;
-            border: 1px solid #F5C6CB;
-        }
-        .feedback-box.loading-msg {
-            display: block;
-            background: #FFF3CD;
-            color: #856404;
-            border: 1px solid #FFEEBA;
-        }
-        .feedback-box.success-msg {
-            display: block;
-            background: #D4EDDA;
-            color: #155724;
-            border: 1px solid #C3E6CB;
-        }
-        .global-footer {
-            background: #4E4034;
-            color: #F5F2EC;
-            margin-top: 70px;
-        }
-        .footer-newsletter-section {
-            max-width: 650px;
-            margin: auto;
-            padding: 55px 20px;
-            text-align: center;
-        }
-        .footer-newsletter-section h2 {
-            font-family: Georgia, serif;
-            font-size: 2rem;
-            font-weight: normal;
-            margin: 0 0 10px;
-        }
-        .footer-newsletter-section p {
-            color: #D9D2C6;
-            margin-bottom: 25px;
-        }
-
-        .newsletter-inline-form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-        }
-        .form-input {
-            flex: 1 1 230px;
-            min-width: 0;
-            padding: 13px;
-            border: 1px solid #8C7864;
-            background: #F5F2EC;
-            color: #4E4034;
-            font-family: inherit;
-        }
-        .btn-submit {
-            padding: 13px 22px;
-            border: 0;
-            background: #D9D2C6;
-            color: #4E4034;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-        .btn-submit:hover {
-            background: #B7A996;
-        }
-        .footer-bottom-bar {
-            border-top: 1px solid #8C7864;
-            text-align: center;
-            padding: 18px;
-            color: #D9D2C6;
-            font-size: 0.85rem;
-        }
-        .footer-bottom-bar p {
-            margin: 0;
-        }
-        @media (max-width: 950px) {
-            .order-split-layout {
-                grid-template-columns: 1fr;
-            }
-        }
-        @media (max-width: 900px) {
-            .header-container {
-                flex-direction: column;
-            }
-            .nav-link ul {
-                justify-content: center;
-                gap: 15px;
-            }
-        }
-        @media (max-width: 600px) {
-            .Global-header {
-                padding: 18px 15px;
-            }
-
-            .brand-logo h1 {
-                font-size: 1.7rem;
-            }
-
-            .nav-link ul {
-                gap: 10px 15px;
-            }
-
-            .nav-link a {
-                font-size: 0.75rem;
-            }
-
-            .order-page-container {
-                margin: 45px auto;
-                padding: 0 18px;
-            }
-    #shippingAddressBlock[hidden] {
+}
+.brand-logo h1 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #4E4034;
+}
+.nav-link ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-link a {
+    text-decoration: none;
+    color: #8C7864;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    transition: color 0.3s ease;
+}
+.nav-link a:hover,.nav-link a:focus,.nav-link a.active {
+    color: #4E4034;
+}
+.header-actions a {
+    display: inline-block;
+    text-decoration: none;
+    color: #F5F2EC;
+    background: #4E4034;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    transition: background 0.3s ease;
+}
+.header-actions a:hover {
+    background: #8C7864;
+}
+.order-page-container {
+    max-width: 1300px;
+    margin: 65px auto;
+    padding: 0 5%;
+}
+.content-header-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.content-header-container h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+.lead-paragraph {
+    color: #8C7864;
+    max-width: 650px;
+    margin: auto;
+}
+.page-eyebrow {
+    display: block;
+    color: #8C7864;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+.order-split-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    gap: 30px;
+    align-items: start;
+}
+.form-card-section,.details-section-card {
+    background: #FFFFFF;
+    padding: 35px;
+    border: 1px solid #D9D2C6;
+}
+.form-card-section h3 {
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 22px;
+    min-width: 0;
+}
+.form-field label,.delivery-legend {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.form-control {
+    width: 100%;
+    padding: 13px 14px;
+     border: 1px solid #D9D2C6;
+    background: #F5F2EC;
+    color: #4E4034;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 0;
+}
+.form-control:focus {
+    outline: 2px solid #8C7864;
+    outline-offset: 2px;
+}
+.form-control::placeholder {
+    color: #8C7864;
+    opacity: 0.8;
+}
+.delivery-fieldset {
+    border: 1px solid #D9D2C6;
+    padding: 20px;
+    margin: 0 0 25px;
+    background: #F5F2EC;
+}
+.delivery-legend {
+    padding: 0 8px;
+    margin-bottom: 10px;
+}
+.radio-selection-block {
+    display: flex;
+    flex-direction: column;
+     gap: 16px;
+}
+.radio-custom-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+.radio-custom-label input {
+    margin-top: 6px;
+    accent-color: #4E4034;
+}
+#shippingAddressBlock {
+    max-height: 300px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.4s ease,
+                opacity 0.4s ease,
+                 margin-bottom 0.4s ease;
+}
+#shippingAddressBlock.hidden-address {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    pointer-events: none;
+}
+.input-error {
+    border: 2px solid #DC3545 !important;
+    background: #FFF8F8 !important;
+}
+.btn-form-submit {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background: #4E4034;
+    color: #F5F2EC;
+    border: 1px solid #4E4034;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-form-submit:hover {
+    background: #8C7864;
+    border-color: #8C7864;
+}
+.btn-form-submit:focus-visible,.btn-submit:focus-visible,.header-actions a:focus-visible {
+    outline: 2px solid #8C7864;
+     outline-offset: 3px;
+}
+.details-section-card {
+    margin-bottom: 20px;
+}
+.details-section-card h4 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+.details-section-card p {
+    color: #8C7864;
+    font-size: 0.95rem;
+}
+.details-section-card ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+.details-section-card li {
+    margin-bottom: 14px;
+    color: #8C7864;
+    font-size: 0.92rem;
+}
+.details-section-card li strong {
+    color: #4E4034;
+}
+.delivery-note {
+    background: #E8E3DA;
+    padding: 18px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.feedback-box {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: none;
+    overflow-wrap: anywhere;
+}
+.feedback-box.error-msg {
+    display: block;
+    background: #F8D7DA;
+    color: #721C24;
+    border: 1px solid #F5C6CB;
+}
+.feedback-box.loading-msg {
+    display: block;
+    background: #FFF3CD;
+    color: #856404;
+    border: 1px solid #FFEEBA;
+}
+.feedback-box.success-msg {
+    display: block;
+    background: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}
+.global-footer {
+    background: #4E4034;
+    color: #F5F2EC;
+    margin-top: 70px;
+}
+.footer-newsletter-section {
+    max-width: 650px;
+    margin: auto;
+    padding: 55px 20px;
+    text-align: center;
+}
+.footer-newsletter-section h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+.footer-newsletter-section p {
+    color: #D9D2C6;
+    margin-bottom: 25px;
+}
+.newsletter-inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    }
+.form-input {
+    flex: 1 1 230px;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #8C7864;
+    background: #F5F2EC;
+    color: #4E4034;
+    font-family: inherit;
+}
+.btn-submit {
+    padding: 13px 22px;
+    border: 0;
+    background: #D9D2C6;
+    color: #4E4034;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background: #B7A996;
+}
+.footer-bottom-bar {
+    border-top: 1px solid #8C7864;
+    text-align: center;
+    padding: 18px;
+    color: #D9D2C6;
+    font-size: 0.85rem;
+}
+.footer-bottom-bar p {
+    margin: 0;
+}
+ @media (max-width: 950px) {
+    .order-split-layout {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+    }
+.nav-link ul {
+    justify-content: center;
+    gap: 15px;
+}
+    }
+@media (max-width: 600px) {
+.Global-header {
+    padding: 18px 15px;
+}
+.brand-logo h1 {
+    font-size: 1.7rem;
+}
+.nav-link ul {
+    gap: 10px 15px;
+}
+.nav-link a {
+    font-size: 0.75rem;
+}
+.order-page-container {
+    margin: 45px auto;
+    padding: 0 18px;
+}
+#shippingAddressBlock[hidden] {
     display: none !important;
 }
-            .form-card-section,
-            .details-section-card {
-                padding: 22px;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-
-            .newsletter-inline-form {
-                flex-direction: column;
-            }
-
-            .form-input,
-            .btn-submit {
-                width: 100%;
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                scroll-behavior: auto !important;
-                transition-duration: 0.01ms !important;
-                animation-duration: 0.01ms !important;
-            }
-        }
-    </style>
+.form-card-section,.details-section-card {
+    padding: 22px;
+}
+.form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+.newsletter-inline-form {
+    flex-direction: column;
+    }
+.form-input,.btn-submit {
+    width: 100%;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+*,*::before,*::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+}
+    }
+</style>
 </head>
 <body>
     <header class="Global-header">
@@ -470,7 +432,6 @@
             <div class="brand-logo">
                 <h1>ZaneparksHyper</h1>
             </div>
-
             <nav class="nav-link" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -481,25 +442,17 @@
                     <li><a href="enquiry.html">Enquiry</a></li>
                 </ul>
             </nav>
-
             <div class="header-actions">
                 <a href="catalogue.html">Continue Shopping</a>
             </div>
-
         </div>
     </header>
-
     <main class="order-page-container">
         <section class="content-header-container">
             <span class="page-eyebrow">Your Shopping Journey</span>
             <h2>Complete Your Order</h2>
-            <p class="lead-paragraph">
-                Thank you for shopping with ZaneparksHyper.
-                Enter your details below and choose the delivery
-                or collection option that works best for you.
-            </p>
+            <p class="lead-paragraph">Thank you for shopping with ZaneparksHyper. Enter your details below and choose the delivery or collection option that works best for you.</p>
         </section>
-<hr>
         <div class="order-split-layout">
             <section class="form-card-section" aria-labelledby="checkoutHeading">
                 <h3 id="checkoutHeading">Delivery &amp; Customer Details</h3>
@@ -507,205 +460,85 @@
                     <div class="form-row">
                         <div class="form-field">
                             <label for="customerFullName">Full Name</label>
-                            <input
-                                type="text"
-                                id="customerFullName"
-                                name="customerFullName"
-                                class="form-control"
-                                placeholder="e.g. Bongani Mashabela"
-                                autocomplete="name"
-                                minlength="2"
-                                required>
+                            <input type="text" id="customerFullName" name="customerFullName" class="form-control" placeholder="e.g. Bongani Mashabela" autocomplete="name" minlength="10" required>
                         </div>
-
                         <div class="form-field">
                             <label for="customerPhone">Phone Number</label>
-                            <input
-                                type="tel"
-                                id="customerPhone"
-                                name="customerPhone"
-                                class="form-control"
-                                placeholder="e.g. 0823456789"
-                                autocomplete="tel"
-                                inputmode="tel"
-                                required>
+                            <input type="tel" id="customerPhone" name="customerPhone" class="form-control" placeholder="e.g. 0823456789" autocomplete="tel" inputmode="tel" required>
                         </div>
                     </div>
-
                     <div class="form-field">
                         <label for="itemSelection">Select Your Product</label>
-                        <select
-                            id="itemSelection"
-                            name="itemSelection"
-                            class="form-control"
-                            required>
+                        <select id="itemSelection" name="itemSelection" class="form-control" required>
                             <option value="">-- Choose a Product --</option>
                             <option value="jeans">Premium Straight Jeans - R600</option>
                             <option value="tops">Kids' Tops - R150</option>
                             <option value="sandals">Sandals - R160</option>
                         </select>
                     </div>
-
                     <fieldset class="delivery-fieldset">
-                        <legend class="delivery-legend">
-                            Choose a Delivery Method
-                        </legend>
+                        <legend class="delivery-legend"> Choose a Delivery Method</legend>
                         <div class="radio-selection-block">
                             <label class="radio-custom-label">
-                                <input
-                                    type="radio"
-                                    name="deliveryMethod"
-                                    value="gauteng"
-                                    required>
+                                <input type="radio" name="deliveryMethod" value="gauteng"required>
                                 <span>Gauteng delivery — R60</span>
                             </label>
-
                             <label class="radio-custom-label">
-                                <input
-                                    type="radio"
-                                    name="deliveryMethod"
-                                    value="nationwide">
+                                <input type="radio" name="deliveryMethod" value="nationwide">
                                 <span>Nationwide delivery — R100</span>
                             </label>
-
                             <label class="radio-custom-label">
-                                <input
-                                    type="radio"
-                                    name="deliveryMethod"
-                                    value="collect">
+                                <input type="radio" name="deliveryMethod" value="collect">
                                 <span>Click and collect — Free</span>
                             </label>
                         </div>
                     </fieldset>
-
                     <div class="form-field" id="shippingAddressBlock">
-                        <label for="shippingAddress">
-                            Full Physical Delivery Address
-                        </label>
-                        <textarea
-                            id="shippingAddress"
-                            name="shippingAddress"
-                            class="form-control"
-                            rows="3"
-                            placeholder="Enter street number, suburb, city and postal code."
-                            autocomplete="street-address"
-                            required></textarea>
+                        <label for="shippingAddress">Full Physical Delivery Address</label>
+                        <textarea id="shippingAddress" name="shippingAddress" class="form-control" rows="3" placeholder="Enter street number, suburb, city and postal code." autocomplete="street-address" required></textarea>
                     </div>
-                    <button type="submit" class="btn-form-submit">
-                        Confirm &amp; Place Order
-                    </button>
-                    <div
-                        id="checkoutFeedback"
-                        class="feedback-box"
-                        role="status"
-                        aria-live="polite"
-                        aria-atomic="true">
-                    </div>
+                    <button type="submit" class="btn-form-submit">Confirm &amp; Place Order</button>
+                    <div id="checkoutFeedback" class="feedback-box" role="status" aria-live="polite" aria-atomic="true"></div>
                 </form>
             </section>
-
-
             <aside class="location-details-sidebar" aria-label="Delivery information">
                 <div class="details-section-card">
                     <h4>Delivery Information</h4>
-                    <p>
-                        Review the available delivery methods and
-                        estimated timelines before placing your order.
-                    </p>
+                    <p>Review the available delivery methods and estimated timelines before placing your order.</p>
                     <ul>
-                        <li>
-                            <strong>Gauteng Delivery:</strong>
-                            Delivery fee of R60.
-                        </li>
-                        <li>
-                            <strong>Nationwide Courier:</strong>
-                            Delivery fee of R100.
-                        </li>
-                        <li>
-                            <strong>Click &amp; Collect:</strong>
-                            Collection is free. The stated collection
-                            target is within four hours.
-                        </li>
-
-                        <li>
-                            <strong>Tracking:</strong>
-                            Tracking details can be provided once an
-                            order has been processed and dispatched.
-                        </li>
+                        <li><strong>Gauteng Delivery:</strong>Delivery fee of R60.</li>
+                        <li><strong>Nationwide Courier:</strong>Delivery fee of R100.</li>
+                        <li><strong>Click &amp; Collect:</strong>Collection is free. The stated collection target is within four hours.</li>
+                        <li><strong>Tracking:</strong>Tracking details can be provided once an order has been processed and dispatched.</li>
                     </ul>
-
                     <div class="delivery-note">
                         <strong>Collection Location</strong>
-                        <p>
-                            Shop 114, Bentel Ave, Jansen Park,
-                            Boksburg, 1462, South Africa.
-                        </p>
+                        <p>Shop 114, Bentel Ave, Jansen Park, Boksburg, 1462, South Africa.</p>
                     </div>
                 </div>
-<hr>
                 <div class="details-section-card">
                     <h4>Need Assistance?</h4>
-                    <p>
-                        Have a question about your order or delivery?
-                        Our team is available to help.
-                    </p>
-                    <a href="contact.html" class="card-cta-link">
-                        Contact Our Team
-                    </a>
+                    <p>Have a question about your order or delivery? Our team is available to help.</p>
+                    <a href="contact.html" class="card-cta-link">Contact Our Team</a>
                 </div>
-
             </aside>
-
         </div>
-
     </main>
-
-    
     <footer class="global-footer">
-
-        <section class="footer-newsletter-section"
-                 aria-labelledby="NewsletterHeading">
-
+        <section class="footer-newsletter-section"aria-labelledby="NewsletterHeading">
             <div class="newsletter-content-box">
                 <h2 id="NewsletterHeading">Stay Connected</h2>
-                <p>
-                    Subscribe to our newsletter for store updates,
-                    new arrivals and special offers.
-                </p>
-
-                <form id="storeNewsletterform"
-                      class="newsletter-inline-form"
-                      novalidate>
-
-                    <label for="SubscriberEmail" class="visually-hidden">
-                        Email Address
-                    </label>
-                    <input
-                        type="email"
-                        id="SubscriberEmail"
-                        name="email"
-                        class="form-input"
-                        placeholder="Enter your email address"
-                        autocomplete="email"
-                        required>
-                    <button type="submit" class="btn-submit">
-                        Subscribe
-                    </button>
+                <p> Subscribe to our newsletter for store updates, new arrivals and special offers.</p>
+                <form id="storeNewsletterform" class="newsletter-inline-form" novalidate>
+                    <label for="SubscriberEmail" class="visually-hidden">Email Address</label>
+                    <input type="email" id="SubscriberEmail" name="email" class="form-input" placeholder="Enter your email address" autocomplete="email" required>
+                    <button type="submit" class="btn-submit">Subscribe</button>
                 </form>
-                <div
-                    id="newsletterFeedback"
-                    class="feedback-box"
-                    role="status"
-                    aria-live="polite"
-                    aria-atomic="true">
-                </div>
+                <div id="newsletterFeedback" class="feedback-box" role="status" aria-live="polite" aria-atomic="true"></div>
             </div>
         </section>
-<hr>
         <div class="footer-bottom-bar">
-            <p>
-                &copy; 2026 ZaneparksHyper. All Rights Reserved.
-            </p>
+            <p>&copy; 2026 ZaneparksHyper. All Rights Reserved.</p>
         </div>
     </footer>
     <script src="javascript/order.js" defer></script>

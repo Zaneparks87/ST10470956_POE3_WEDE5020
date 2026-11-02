@@ -17,12 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
         emailInput.removeAttribute("aria-invalid");
     }
 
+
     emailInput.addEventListener("input", function () {
         clearError();
         feedback.className = "feedback-box";
         feedback.textContent = "";
     });
 
+    
     newsletterForm.addEventListener("submit", function (event) {
         event.preventDefault();
         clearError();

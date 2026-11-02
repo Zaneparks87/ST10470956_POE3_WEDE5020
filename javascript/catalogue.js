@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 ) {
                     return;
                 }
-
                 const name = item.name;
                 const colour =
                     typeof item.colour === "string"
@@ -81,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         : "";
 
                 const id = makeCartId(name, colour);
-
                 cart[id] = {
                     id,
                     name,
@@ -150,8 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
             activeDepartment === "all"
                 ? "Browse All Products"
                 : (
-                    $(
-                        `[data-section="${activeDepartment}"] .section-title h2`
+             $(
+               `[data-section="${activeDepartment}"] .section-title h2`
                     )?.textContent || "Browse Products"
                 );
     }

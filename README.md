@@ -27,7 +27,7 @@ The website uses the following technologies:
 HTML5
 HTML is used to create the structure and content of each webpage, including headings, navigation, forms, images, buttons, and sections.
 
- CSS3
+ CSS
 CSS is used to control the appearance of the website, including colours, typography, spacing, layout, responsiveness, and interactive visual effects.
 
 JavaScript
@@ -57,11 +57,9 @@ The order page contains a demonstration order form with customer details, produc
 Contact — `contact.html`
 The contact page allows users to enter their contact details and submit a general message through a validated form.
 
-Enquiries — `enquiry.html`
-The enquiry page provides a form for product, order, delivery, and other questions. It also contains a Frequently Asked Questions (FAQ) accordion.
-
-## 5. Project Folder Structure
-
+Enquiry — `enquiry.html`
+The enquiry page provides a form for product, order, delivery and other questions. It also contains a Frequently Asked Questions (FAQ) accordion.
+ 5. Project Folder Structure
 The project is organised into HTML pages, a shared stylesheet, JavaScript files, and an assets folder.
 
 ZaneparksHyper/
@@ -89,9 +87,9 @@ ZaneparksHyper/
 ├── README.md
 ├── CHANGELOG.md
 
-## 6. Main Features
+6. Main Features
  Navigation
-The website provides navigation links to its main pages so users can move between the homepage, catalogue, About Us, order, contact, and enquiry sections.
+The website provides navigation links to its main pages so users can move between the homepage, catalogue, About Us, order, contact and enquiry sections.
 
 Product Catalogue
 The catalogue provides product information and interactive controls.
@@ -108,7 +106,7 @@ The order page includes:
 - Delivery options.
 - Input validation.
 - Feedback messages.
-The order form is a demonstration and does not process real payments unless a secure payment system has been separately implemented.
+The order form is a demonstration and does not process real payments unless a secure payment system has been separately created.
 
 Contact Form
 The contact page allows users to enter their details and a message. JavaScript validates the input and provides feedback.
@@ -131,7 +129,7 @@ The newsletter form checks the email address and provides feedback to the user.
 Unless a mailing-list service has been connected, the form does not save email addresses or subscribe users to a real newsletter.
 
 Interactive Map
-A map can be displayed on the homepage using JavaScript and an embedded map. The map must be configured with the correct location and tested before the feature is considered complete.
+A map can be displayed on the homepage using JavaScript and an embedded map.
 
 7. JavaScript Files
 The JavaScript files are organised in the `javascript` folder.
@@ -144,11 +142,7 @@ enquiry.js > Handles enquiry form validation and FAQ accordion interactions.
 newsletter.js > Validates newsletter form input and displays feedback. 
 maps.js > Adds the embedded map if the map container and script are configured. 
 
-Each HTML page should load only the JavaScript files it needs. Script paths and filenames must match the actual project structure.
-
 8. Design and User Experience
-
-The website uses a brown-and-cream colour scheme to maintain a consistent appearance across its pages.
 
 The design aims to provide:
 - Clear navigation.
@@ -158,8 +152,6 @@ The design aims to provide:
 - Helpful validation messages.
 - Interactive buttons and FAQ controls.
 - A layout that adapts to different screen sizes.
-
-The website should be tested on desktop and mobile screen sizes to ensure that the content remains readable and usable.
 
 9. SEO and Accessibility
 
@@ -197,10 +189,6 @@ Follow these steps to run the project locally.
 
 11. Testing
 
-The website should be tested before submission.
-
-Testing should include:
-
 - Opening every webpage.
 - Checking all navigation links.
 - Confirming that product images load.
@@ -221,15 +209,12 @@ Testing should include:
 The website uses JavaScript for client-side form validation and feedback.
 
 Client-side validation helps users identify missing or incorrectly entered information. However, it does not automatically send data to a server.
-
 Unless a backend or form-handling service has been connected and tested:
-
 - The enquiry form does not send messages to the store.
 - The contact form does not send messages to the store.
 - The newsletter form does not save subscribers.
 - The order form does not create a real order or process payment.
 13. Future Improvements
-
 Possible future improvements include:
 
 - Connecting enquiry and contact forms to a backend.

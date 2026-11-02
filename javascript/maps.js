@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Map container #storeMap was not found on this page.");
         return;
     }
-
     const mapFrame = document.createElement("iframe");
 
     mapFrame.src =
@@ -20,7 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
     mapFrame.loading = "lazy";
     mapFrame.referrerPolicy = "no-referrer-when-downgrade";
     mapFrame.allowFullscreen = true;
-
-
     mapContainer.replaceChildren(mapFrame);
 });

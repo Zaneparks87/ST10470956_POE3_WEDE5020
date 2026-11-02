@@ -18,14 +18,12 @@ if (!nameInput || !phoneInput || !productSelect ||
     console.error("Checkout form is missing required elements.");
     return;
 }
-
     const productPrices = {
         jeans: 600,
         tops: 150,
         sandals: 160
     };
 
-    
     const deliveryPrices = {
         gauteng: 60,
         nationwide: 100,
@@ -68,7 +66,6 @@ if (!nameInput || !phoneInput || !productSelect ||
         });
     });
 
-    
     function getDeliveryMethod() {
         const selected = orderForm.querySelector(
             'input[name="deliveryMethod"]:checked'
@@ -76,8 +73,6 @@ if (!nameInput || !phoneInput || !productSelect ||
 
         return selected ? selected.value : "";
     }
-
-    
     function updateAddressVisibility() {
         const method = getDeliveryMethod();
         const needsAddress = method === "gauteng" ||
@@ -96,7 +91,6 @@ if (!nameInput || !phoneInput || !productSelect ||
             }
         }
     }
-
     orderForm.querySelectorAll(
         'input[name="deliveryMethod"]'
     ).forEach(function (radio) {
@@ -128,7 +122,6 @@ if (!nameInput || !phoneInput || !productSelect ||
                 firstInvalidField = field;
             }
         }
-
         const customerName = nameInput.value.trim();
         const phone = phoneInput.value.trim();
         const product = productSelect.value;
@@ -137,7 +130,6 @@ if (!nameInput || !phoneInput || !productSelect ||
         if (customerName.length < 2) {
             rejectField(nameInput);
         }
-
         const phonePattern = /^(?:\+27|0)\d{9}$/;
 
         const cleanedPhone = phone.replace(/[\s()-]/g, "");
@@ -145,7 +137,6 @@ if (!nameInput || !phoneInput || !productSelect ||
         if (!phonePattern.test(cleanedPhone)) {
             rejectField(phoneInput);
         }
-
 
         if (!product || productPrices[product] === undefined) {
             rejectField(productSelect);
@@ -161,15 +152,12 @@ if (!nameInput || !phoneInput || !productSelect ||
 
             return;
         }
-
-    
         const needsAddress = deliveryMethod === "gauteng" ||
                              deliveryMethod === "nationwide";
 
         if (needsAddress && !addressInput.value.trim()) {
             rejectField(addressInput);
         }
-
         if (!valid) {
             showFeedback(
                 "Please correct the highlighted fields before continuing.",
@@ -182,7 +170,6 @@ if (!nameInput || !phoneInput || !productSelect ||
 
             return;
         }
-
         const productPrice = productPrices[product];
         const deliveryPrice = deliveryPrices[deliveryMethod];
         const total = productPrice + deliveryPrice;
@@ -201,7 +188,6 @@ if (!nameInput || !phoneInput || !productSelect ||
         } else {
             deliveryMessage = "Nationwide delivery selected.";
         }
-
         showFeedback(
             "Your details are valid! " +
             deliveryMessage +
